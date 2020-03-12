@@ -1,4 +1,4 @@
-#Anotações na entrevista com os estagiários do CJS
+# Anotações na entrevista com os estagiários do CJS
 	somente CPF contra CPF
 	só trabalha com família
 	somente uma pessoa abre a "matricula" no CJS e as outras partes são inseridas no processo.
@@ -13,9 +13,9 @@
  
 Falar com Lislene(prof, advg e responsável do núcleo) ou Alessandra, Cristiane Camila, Fabricio e Pedro (Advogados). das 13 as 17h. Falar sobre o estagio daqui da Unesp, do desenvolvimento do CJS e do CJS em sí.
 
-#Entrevista na FDF
+# Entrevista na FDF
 
-##Regras de negócio
+## Regras de negócio
 * Se descobrir-se que o usuário possui patrimônio além do máximo para ser atendido, mesmo após ter sido aprovado na triagem, a FDF faz a renuncia e o processo (na FDF) é encerrado.
 * a forma de distribuição de ações é por quantidade de processos por mesa.
 * os processos são atribuidos conforme a quantadade e o estado do processo. (se todos estiverem com a mesma quantidade de processos, por exemplo, os que estiverem em um estado de pendencia, (estagio 1, 2, 3...)) serão considerados candidatos a receber o próximo.
@@ -28,17 +28,17 @@ Falar com Lislene(prof, advg e responsável do núcleo) ou Alessandra, Cristiane
 
 
 
-##Anotações Gerais
+## Anotações Gerais
 * NAJ é + - equivalente ao CJS na FDF
 * Na FDF existe uma "fichinha" equivalente ao sinótico do CJS, e no caso eles fazem um recorte do diário oficial com o que for relacionado ao processo
 * O diário oficial consegue pesquisar por palavra chave ou mostrar tudo relacionado aos processos
 * Os estagiários na FDF tem estágio de no maximo um ano, e os processos são vinculados à mesa. Os processos da mesa ficam num PC e numa pasta física para consulta.
 
-##Abreviações
+## Abreviações
 * NAJ - Nucleo de atendimento juridico 
 
 
-#NÃO FUNCIONAL:
+# NÃO FUNCIONAL:
 * não se pode fazer um processo novo para a mesma pessoa dentro de 6 meses que seu processo tenha terminado. não se pode fazer processos paralelos. **É necessário que o coordenador possa permitir 2 processos simultaneos ou quebre essa regra em caso de necessidade, como por exemplo processos de pensão, revisão de pensão, #execução de alimentos, por exemplo.**
 * não fazem processos para pessoas com as quais eles "trabalharam contra" por um praso de 2 anos
 * O COORDENADOR DEVE TER O PODER DE QUEBRAR REGRAS!
@@ -48,10 +48,10 @@ Falar com Lislene(prof, advg e responsável do núcleo) ou Alessandra, Cristiane
 * a FDF permite que se faça processos contra CNPJ
 
 
-##métricas
+## métricas
 tudo é feito relatórios, relacionado a demoras, atrasos de estagiários, atendimentos e etc
 após o processo ser entregue para juiz, não ha controle de tempo
 pede-se que se considere mais crítico quando se marca uma audiencia atravéz do diário oficial. um alerta diferente no início da aplicação é uma sugestão
 
-##Demandas 
+## Demandas 
 * demanda para que se pegue as publicações do diário oficial e localize as necessárias automáticamente e identificar o nome das partes e as fichas das mesas
