@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>My CRUD in NodeJS</title>
+</head>
+<body>
+
+<h2>Registros<h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Nome</td>
+                <td>Sobrenome</td>
+            </tr>
+        </thead>
+        <tbody>
+        <% data.forEach(function(details) { %>
+            <tr>
+                <td><%= details.name %></td>
+                <td><%= details.surname %></td>
+            </tr>
+            <% }) %>
+        </tbody>
+        <button><a href="/">Voltar</a></button>
+</body>
+</html>
