@@ -1,0 +1,7 @@
+{
+    "criar os placeholders dummy neste arquivo"
+    "extends": "n",
+    "compilerOptions": {
+      "outDir": "",
+      "types": []
+    },
