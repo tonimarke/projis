@@ -1,7 +1,58 @@
-{
+/*{
     "criar os placeholders dummy neste arquivo"
     "extends": "n",
     "compilerOptions": {
-      "outDir": "",
-      "types": []
-    },
+      "outDir": "intern.js",
+      "types": [
+		  {
+		    
+		  }
+		]
+}, */
+
+
+/* intern */ 
+{
+	"name": "Estagiario de exemplo",
+    "cpf": "123.456.789-0",
+    "rg": "11.222.333-4",
+    "address": "Rua Exemplo 123",
+    "phone": "999999999",
+    "email":"exemlo@email.com",
+    "birth":"10-02-2000",
+    "start_date": "01-01-2000",
+    "deadline": "01-01-2002"
+}
+
+/* opponent */ 
+{
+	"name": "opponent de exemplo",
+    "cpf": "000.456.789-0",
+    "rg": "00.222.333-4",
+    "address": "Rua do outro exemplo 654"
+}
+
+/* customer */ 
+{
+	"name" : "customer de exemplo",
+	"cpf" : "08007757575",
+	"rg": "22.333.333-4",
+	"address" : "Rua da contra mão 0",
+	"phone": "1688888999999",
+	"birth":"10-02-2000",
+	"registred_by" : "idDoIntern"/* esse campo é type: mongoose.ObjectId. Exemplo "5ec451d72e2441670e5bc7c1"*/
+}
+
+/* action */ 
+{
+	"actionName": "Acão de exemplo",
+	"opponent" : "idDoOpponent",
+	"customer" : "IdDoCustomer"
+}
+
+/* supervisor */
+{
+	"name" : "Super Supervisor",
+	"cpf": "123456789",
+	"rg": "99.888.777-6"
+}
