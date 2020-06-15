@@ -1,1 +1,28 @@
-<p>{{ actions.toString() }}</p>
+<table mat-table [dataSource]="actions" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Coluna nome da ação -->
+    <ng-container matColumnDef="actionName">
+      <th mat-header-cell *matHeaderCellDef> Nome da Ação </th>
+      <td mat-cell *matCellDef="let action"> {{action.actionName}} </td>
+    </ng-container>
+  
+    <!-- Coluna customer -->
+    <ng-container matColumnDef="customer">
+      <th mat-header-cell *matHeaderCellDef> Usuário </th>
+      <td mat-cell *matCellDef="let action"> {{action.customer.name}} </td>
+    </ng-container>
+  
+    <!-- Coluna opponent -->
+    <ng-container matColumnDef="opponent">
+      <th mat-header-cell *matHeaderCellDef> Alvo da Ação </th>
+      <td mat-cell *matCellDef="let action"> {{action.opponent.name}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+  

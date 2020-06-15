@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class ActionListComponent implements OnInit {
 
   actions : any = [] // vetor vazio
+  displayedColumns: any = ['actionName', 'customer', 'opponent']
  
   constructor(private actionSrv: ActionService) { }
 
