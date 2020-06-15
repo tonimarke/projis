@@ -1,38 +1,101 @@
-/*{
-    "criar os placeholders dummy neste arquivo"
-    "extends": "n",
-    "compilerOptions": {
-      "outDir": "intern.js",
-      "types": [
-		  {
-		    
-		  }
-		]
-}, */
+// intern
+[
+    {
+        "_id": "5ee7c3d55aa7590e02cf57d0",
+        "name": "José da Silva",
+        "cpf": "123.456.111-0",
+        "rg": "11.222.111-4",
+        "address": "Rua do Sobe e Desce, 1234",
+        "phone": "991231111",
+        "email": "josedasilva@zemail.com",
+        "birth": "1947-10-02T03:00:00.000Z",
+        "start_date": "2000-01-01T02:00:00.000Z",
+        "deadline": "2022-01-01T03:00:00.000Z",
+        "__v": 0
+    },
+    {
+        "_id": "5ee7c4095aa7590e02cf57d1",
+        "name": "Estagiario de exemplo",
+        "cpf": "123.456.789-0",
+        "rg": "11.222.333-4",
+        "address": "Rua Exemplo 123",
+        "phone": "999999999",
+        "email": "exemlo@email.com",
+        "birth": "2000-10-02T03:00:00.000Z",
+        "start_date": "2000-01-01T02:00:00.000Z",
+        "deadline": "2002-01-01T02:00:00.000Z",
+        "__v": 0
+    },
+    {
+        "_id": "5ee7c43e5aa7590e02cf57d3",
+        "name": "Maria Joaquina",
+        "cpf": "123.456.222-0",
+        "rg": "11.222.222-3",
+        "address": "Rua de Cima, 234",
+        "phone": "991231222",
+        "email": "mariajoaquina@zemail.com",
+        "birth": "1988-07-21T03:00:00.000Z",
+        "start_date": "2000-01-01T02:00:00.000Z",
+        "deadline": "2022-01-01T03:00:00.000Z",
+        "__v": 0
+    },
+    {
+        "_id": "5ee7c45a5aa7590e02cf57d5",
+        "name": "Eduardo Costa",
+        "cpf": "123.456.165-0",
+        "rg": "14.222.897-4",
+        "address": "Avenida Brasil, 2500",
+        "phone": "996299111",
+        "email": "eduardo@costa.com.br",
+        "birth": "1978-09-06T03:00:00.000Z",
+        "start_date": "2000-01-01T02:00:00.000Z",
+        "deadline": "2022-01-01T03:00:00.000Z",
+        "__v": 0
+    },
+    {
+        "_id": "5ee7c4695aa7590e02cf57d6",
+        "name": "Lazaro Galhos",
+        "cpf": "123.456.551-0",
+        "rg": "11.245.123-4",
+        "address": "Avenida Rebouças, 7458",
+        "phone": "997546767",
+        "email": "lgalhos@globo.com",
+        "birth": "1980-09-10T03:00:00.000Z",
+        "start_date": "2000-01-01T02:00:00.000Z",
+        "deadline": "2022-01-01T03:00:00.000Z",
+        "__v": 0
+    }
+]
 
+// opponent
+[
+    {
+        "_id": "5ee7c4985aa7590e02cf57d7",
+        "name": "opponent de exemplo",
+        "cpf": "000.456.789-0",
+        "rg": "00.222.333-4",
+        "address": "Rua do outro exemplo 654",
+        "__v": 0
+    },
+    {
+        "_id": "5ee7c4a05aa7590e02cf57d8",
+        "name": "Zeca Urubu",
+        "cpf": "050.846.339-0",
+        "rg": "00.222.311-5",
+        "address": "Rua de Baixo, 665",
+        "__v": 0
+    },
+    {
+        "_id": "5ee7c4a65aa7590e02cf57d9",
+        "name": "Leonel Broas",
+        "cpf": "340.456.759-1",
+        "rg": "00.232.233-9",
+        "address": "Rua Sudoeste, 458",
+        "__v": 0
+    }
+]
 
-/* intern */ 
-{
-	"name": "Estagiario de exemplo",
-    "cpf": "123.456.789-0",
-    "rg": "11.222.333-4",
-    "address": "Rua Exemplo 123",
-    "phone": "999999999",
-    "email":"exemlo@email.com",
-    "birth":"10-02-2000",
-    "start_date": "01-01-2000",
-    "deadline": "01-01-2002"
-}
-
-/* opponent */ 
-{
-	"name": "opponent de exemplo",
-    "cpf": "000.456.789-0",
-    "rg": "00.222.333-4",
-    "address": "Rua do outro exemplo 654"
-}
-
-/* customer */ 
+// customer
 {
 	"name" : "customer de exemplo",
 	"cpf" : "08007757575",
@@ -43,16 +106,155 @@
 	"registred_by" : "idDoIntern"/* esse campo é type: mongoose.ObjectId. Exemplo "5ec451d72e2441670e5bc7c1"*/
 }
 
-/* action */ 
-{
-	"actionName": "Acão de exemplo",
-	"opponent" : "idDoOpponent",
-	"customer" : "IdDoCustomer"
-}
+// customers pra inserir
+[
+    {
+        "name" : "customer de exemplo",
+        "cpf" : "08007757575",
+        "rg": "22.333.333-4",
+        "address" : "Rua da contra mão 0",
+        "phone": "1688888999999",
+        "birth":"09-11-1947",
+        "registred_by" : "5ee7c4695aa7590e02cf57d6"
+    },
+    {
+        "name" : "Aparecido Siqueira",
+        "cpf" : "08552457575",
+        "rg": "11.333.489-4",
+        "address" : "Avenida Presidente Vargas, 2002",
+        "phone": "1638545858",
+        "birth":"04-27-1950",
+        "registred_by" : "5ee7c4695aa7590e02cf57d6"
+    },
+    {
+        "name" : "Fransérgio Goulart",
+        "cpf" : "07854267575",
+        "rg": "33.312.312-4",
+        "address" : "Avenida Valdemar Saloon, 45",
+        "phone": "16985244518",
+        "birth":"11-19-1991",
+        "registred_by" : "5ee7c3d55aa7590e02cf57d0"
+    }
+]
 
-/* supervisor */
-{
-	"name" : "Super Supervisor",
-	"cpf": "123456789",
-	"rg": "99.888.777-6"
-}
+// customers get
+[
+    {
+        "_id": "5ee7d19e5aa7590e02cf57dd",
+        "name": "customer de exemplo",
+        "cpf": "08007757575",
+        "rg": "22.333.333-4",
+        "address": "Rua da contra mão 0",
+        "phone": "1688888999999",
+        "birth": "1947-09-11T03:00:00.000Z",
+        "registred_by": {
+            "_id": "5ee7c4695aa7590e02cf57d6",
+            "name": "Lazaro Galhos",
+            "cpf": "123.456.551-0",
+            "rg": "11.245.123-4",
+            "address": "Avenida Rebouças, 7458",
+            "phone": "997546767",
+            "email": "lgalhos@globo.com",
+            "birth": "1980-09-10T03:00:00.000Z",
+            "start_date": "2000-01-01T02:00:00.000Z",
+            "deadline": "2022-01-01T03:00:00.000Z",
+            "__v": 0
+        },
+        "__v": 0
+    },
+    {
+        "_id": "5ee7d19e5aa7590e02cf57df",
+        "name": "Fransérgio Goulart",
+        "cpf": "07854267575",
+        "rg": "33.312.312-4",
+        "address": "Avenida Valdemar Saloon, 45",
+        "phone": "16985244518",
+        "birth": "1991-11-19T02:00:00.000Z",
+        "registred_by": {
+            "_id": "5ee7c3d55aa7590e02cf57d0",
+            "name": "José da Silva",
+            "cpf": "123.456.111-0",
+            "rg": "11.222.111-4",
+            "address": "Rua do Sobe e Desce, 1234",
+            "phone": "991231111",
+            "email": "josedasilva@zemail.com",
+            "birth": "1947-10-02T03:00:00.000Z",
+            "start_date": "2000-01-01T02:00:00.000Z",
+            "deadline": "2022-01-01T03:00:00.000Z",
+            "__v": 0
+        },
+        "__v": 0
+    },
+    {
+        "_id": "5ee7d19e5aa7590e02cf57de",
+        "name": "Aparecido Siqueira",
+        "cpf": "08552457575",
+        "rg": "11.333.489-4",
+        "address": "Avenida Presidente Vargas, 2002",
+        "phone": "1638545858",
+        "birth": "1950-04-27T03:00:00.000Z",
+        "registred_by": {
+            "_id": "5ee7c4695aa7590e02cf57d6",
+            "name": "Lazaro Galhos",
+            "cpf": "123.456.551-0",
+            "rg": "11.245.123-4",
+            "address": "Avenida Rebouças, 7458",
+            "phone": "997546767",
+            "email": "lgalhos@globo.com",
+            "birth": "1980-09-10T03:00:00.000Z",
+            "start_date": "2000-01-01T02:00:00.000Z",
+            "deadline": "2022-01-01T03:00:00.000Z",
+            "__v": 0
+        },
+        "__v": 0
+    }
+]
+
+
+// action 
+[
+    {
+        "actionName": "Acão de exemplo",
+        "opponent" : "5ee7c4a05aa7590e02cf57d8",
+        "customer" : "5ee7d19e5aa7590e02cf57df"
+    },
+    {
+        "actionName": "Acão de despejo",
+        "opponent" : "5ee7c4a05aa7590e02cf57d8",
+        "customer" : "5ee7d19e5aa7590e02cf57dd"
+    },
+    {
+        "actionName": "Acão de conciliação",
+        "opponent" : "5ee7c4a65aa7590e02cf57d9",
+        "customer" : "5ee7d19e5aa7590e02cf57de"
+    }
+]
+
+// supervisor
+[
+    {
+        "_id": "5ee7c5065aa7590e02cf57da",
+        "name": "Super Supervisor",
+        "cpf": "123456789",
+        "rg": "99.888.777-6",
+        "__v": 0
+    },
+    {
+        "_id": "5ee7c50c5aa7590e02cf57db",
+        "name": "Advogada Chefe",
+        "cpf": "423842589",
+        "rg": "91.838.767-6",
+        "__v": 0
+    },
+    {
+        "_id": "5ee7c5165aa7590e02cf57dc",
+        "name": "Maria das Leis",
+        "cpf": "728425789",
+        "rg": "97.858.757-6",
+        "__v": 0
+    }
+]
+
+
+//colas regex e validadores
+$phone = '(11)99999-9999'; isValid = /^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))$/.test($phone)

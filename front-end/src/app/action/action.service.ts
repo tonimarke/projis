@@ -9,6 +9,6 @@ export class ActionService {
   constructor(private http: HttpClient) { }
 
   listar(){
-    return this.http.get('http://localhost:3000/action')
+    return this.http.get('http://localhost:3000/action').toPromise()
   }
 }
