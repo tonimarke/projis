@@ -26,7 +26,7 @@ const esquema = mongoose.Schema({
    birth: {
       type: Date
    },
-   registred_by:{
+   registered_by:{
       type: mongoose.ObjectId,
       ref: 'Intern', // Nome do model referenciado
       required: true
