@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const controller = require('../controllers/intern')
+const controller = require('../controllers/pcontraria')
 
 router.post('/', controller.novo)
 router.get('/', controller.listar)

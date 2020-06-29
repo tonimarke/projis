@@ -1,10 +1,10 @@
-const Intern = require('../models/Intern')
+const Usuario = require('../models/Usuarios')
 
 const controller = {} // Objeto vazio
 
 controller.novo = async (req, res) => {
    try {
-      await Intern.create(req.body)
+      await Usuario.create(req.body)
       // HTTP status 201: Created (criado)
       res.status(201).end()
    }
@@ -25,22 +25,7 @@ controller.listar = async (req, res) => {
    
       try {
          // find() sem parâmetros: retorna todos
-         // É necessário ter um populate() para cada campo relacionado
-         //const lista = await Intern.find().populate('venda').populate('produto')
-
-         // populate() de segundo nível: vendo os dados do cliente que está
-         // dentro da venda que está dentro do item da venda
-         const lista = await Intern.find().populate(
-            // path: campo a ser populado
-            // populate: campo da entidade relacionada que será populado
-            // em segundo nível
-            { path: 'produto', populate: 'fornecedor'}
-         )
-         .populate(
-            // path: campo a ser populado
-            // select: lista de campos a serem exibidos, separados por espaço
-            { path: 'venda', select: 'num_venda data_venda'}
-         )
+         const lista = await Usuario.find().populate('acoes').populate('registrado_por') 
          res.send(lista) // O status HTTP 200 (OK) é implícito
       }
       catch(erro) {
@@ -53,7 +38,7 @@ controller.listar = async (req, res) => {
 controller.obterUm = async (req, res) => {
    try {
       const id = req.params.id
-      const obj = await Intern.findById(id)
+      const obj = await Usuario.findById(id)
       if(obj) { // obj foi encontrado
          res.send(obj) // HTTP 200
       }
@@ -71,7 +56,7 @@ controller.obterUm = async (req, res) => {
 controller.atualizar = async (req, res) => {
    try {
       const id = req.body._id
-      const obj = await Intern.findByIdAndUpdate(id, req.body)
+      const obj = await Usuario.findByIdAndUpdate(id, req.body)
       if(obj) { // obj foi encontrado e atualizado 
          // HTTP 204: No content
          res.status(204).end()
@@ -89,7 +74,7 @@ controller.atualizar = async (req, res) => {
 controller.excluir = async (req, res) => {
    try {
       const id = req.body._id
-      const obj = await Intern.findByIdAndDelete(id)
+      const obj = await Usuario.findByIdAndDelete(id)
       if(obj) {
          res.status(204).end()
       }
@@ -115,7 +100,7 @@ async function busca (req, res) {
    console.log(criterio)
    
    try{
-      let lista = await Intern.find(criterio)
+      let lista = await Usuario.find(criterio)
       res.send(lista)
    }
    catch(erro) {

@@ -22,17 +22,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 
 
-const action = require('./routes/action')
-app.use('/action', action)
+const acao = require('./routes/acao')
+app.use('/acao', acao)
 
-const customer = require('./routes/customer')
-app.use('/customer', customer)
+const usuario = require('./routes/usuario')
+app.use('/usuario', usuario)
 
-const intern = require('./routes/intern')
-app.use('/intern', intern)
+const estagiario = require('./routes/estagiario')
+app.use('/estagiario', estagiario)
 
-const opponent = require('./routes/opponent')
-app.use('/opponent', opponent)
+const pcontraria = require('./routes/pcontraria')
+app.use('/pcontraria', pcontraria)
 
 const supervisor = require('./routes/supervisor')
 app.use('/supervisor', supervisor)

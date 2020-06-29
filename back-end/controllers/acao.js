@@ -1,10 +1,12 @@
-const Action = require('../models/Actions')
+const Acao = require('../models/Acoes')
+const Estagiario = require('../models/Estagiarios')
+const Supervisor = require('../models/Supervisor')
 
 const controller = {} // Objeto vazio
 
 controller.novo = async (req, res) => {
    try {
-      await Action.create(req.body)
+      await Acao.create(req.body)
       // HTTP status 201: Created (criado)
       res.status(201).end()
    }
@@ -27,11 +29,11 @@ controller.listar = async (req, res) => {
          // find() sem parâmetros: retorna todos
          // populate(): preenche o campo relacionado com as informações
          // da entidade relacionada
-         const lista = await Action.find().populate('opponent').populate('customer');
+         const lista = await Acao.find().populate('pcontraria').populate('usuario');
          
          // Exemplo de populate() trazendo apenas dois atributos da entidade relacionada
          // (no caso, nome e cpf)
-         //const lista = await Action.find().populate({path: 'customer', select: 'nome cpf'})
+         //const lista = await Acao.find().populate({path: 'customer', select: 'nome cpf'})
          
          res.send(lista) // O status HTTP 200 (OK) é implícito
       }
@@ -45,7 +47,7 @@ controller.listar = async (req, res) => {
 controller.obterUm = async (req, res) => {
    try {
       const id = req.params.id
-      const obj = await Action.findById(id)
+      const obj = await Acao.findById(id)
       if(obj) { // obj foi encontrado
          res.send(obj) // HTTP 200
       }
@@ -63,7 +65,7 @@ controller.obterUm = async (req, res) => {
 controller.atualizar = async (req, res) => {
    try {
       const id = req.body._id
-      const obj = await Action.findByIdAndUpdate(id, req.body)
+      const obj = await Acao.findByIdAndUpdate(id, req.body)
       if(obj) { // obj foi encontrado e atualizado 
          // HTTP 204: No content
          res.status(204).end()
@@ -81,7 +83,7 @@ controller.atualizar = async (req, res) => {
 controller.excluir = async (req, res) => {
    try {
       const id = req.body._id
-      const obj = await Action.findByIdAndDelete(id)
+      const obj = await Acao.findByIdAndDelete(id)
       if(obj) {
          res.status(204).end()
       }
@@ -107,7 +109,7 @@ async function busca (req, res) {
    console.log(criterio)
    
    try{
-      let lista = await Action.find(criterio)
+      let lista = await Acao.find(criterio)
       res.send(lista)
    }
    catch(erro) {

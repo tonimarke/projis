@@ -1,10 +1,10 @@
-const Customer = require('../models/Customer')
+const Pcontraria = require('../models/Pcontraria')
 
 const controller = {} // Objeto vazio
 
 controller.novo = async (req, res) => {
    try {
-      await Customer.create(req.body)
+      await Pcontraria.create(req.body)
       // HTTP status 201: Created (criado)
       res.status(201).end()
    }
@@ -25,7 +25,7 @@ controller.listar = async (req, res) => {
    
       try {
          // find() sem parâmetros: retorna todos
-         const lista = await Customer.find().populate('actions').populate('registred_by') 
+         const lista = await Pcontraria.find()
          res.send(lista) // O status HTTP 200 (OK) é implícito
       }
       catch(erro) {
@@ -38,7 +38,7 @@ controller.listar = async (req, res) => {
 controller.obterUm = async (req, res) => {
    try {
       const id = req.params.id
-      const obj = await Customer.findById(id)
+      const obj = await Pcontraria.findById(id)
       if(obj) { // obj foi encontrado
          res.send(obj) // HTTP 200
       }
@@ -56,7 +56,7 @@ controller.obterUm = async (req, res) => {
 controller.atualizar = async (req, res) => {
    try {
       const id = req.body._id
-      const obj = await Customer.findByIdAndUpdate(id, req.body)
+      const obj = await Pcontraria.findByIdAndUpdate(id, req.body)
       if(obj) { // obj foi encontrado e atualizado 
          // HTTP 204: No content
          res.status(204).end()
@@ -74,7 +74,7 @@ controller.atualizar = async (req, res) => {
 controller.excluir = async (req, res) => {
    try {
       const id = req.body._id
-      const obj = await Customer.findByIdAndDelete(id)
+      const obj = await Pcontraria.findByIdAndDelete(id)
       if(obj) {
          res.status(204).end()
       }
@@ -100,7 +100,7 @@ async function busca (req, res) {
    console.log(criterio)
    
    try{
-      let lista = await Customer.find(criterio)
+      let lista = await Pcontraria.find(criterio)
       res.send(lista)
    }
    catch(erro) {

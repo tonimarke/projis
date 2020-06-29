@@ -1,18 +1,66 @@
-// intern
+// estagiario  POSTs
+
+{
+    "nome": "José da Silva",
+    "cpf": "123.456.111-0",
+    "rg": "987.648-77",
+    "email": "josedasilva@zemail.com",
+    "data_nascimento": "1947-10-02T03:00:00.000Z",
+    "inicio_vinculo": "",
+    "fim_vinculo": "2022-01-01T03:00:00.000Z",
+    "curso": "Direito",
+    "status": true,
+    "enderecos": [
+        {"logradouro": "Avenida Brasil",
+         "numero": "4868",
+         "cidade": "Franca",
+         "estado": "SP"}
+    ]
+  }
+  
+  {
+    "nome": "Maria Joaquina",
+    "cpf": "123.456.133-0",
+    "rg": "987.622-77",
+    "email": "mariajoaquina@zmail.com",
+    "data_nascimento": "1955-11-07T03:00:00.000Z",
+    "inicio_vinculo": "",
+    "fim_vinculo": "2023-01-01T03:00:00.000Z",
+    "curso": "Serviço Social",
+    "status": true,
+    "enderecos": [
+        {
+            "logradouro": "Rua dos Marcondes",
+            "numero": "282",
+            "bairro": "Parque dos Ipês",
+            "complemento": "Rotatória da Mabel",
+            "cep": "15548-874",
+            "cidade": "Miguelópolis",
+            "estado": "SP"
+        },
+        {
+            "logradouro": "Avenida Presidente Vargas",
+            "numero": "1066",
+            "bairro": "Centro",
+            "cep": "14405-800",
+            "cidade": "Franca",
+            "estado": "SP"
+        }
+    ],
+  "telefones":[
+      {
+        "numero": "(16)98456-8458",
+        "tipo": "Celular"
+      },
+      {
+        "numero": "(17)3745-8458",
+        "tipo": "Fixo"
+      }
+  ]
+}
+
 [
-    {
-        "_id": "5ee7c3d55aa7590e02cf57d0",
-        "name": "José da Silva",
-        "cpf": "123.456.111-0",
-        "rg": "11.222.111-4",
-        "address": "Rua do Sobe e Desce, 1234",
-        "phone": "991231111",
-        "email": "josedasilva@zemail.com",
-        "birth": "1947-10-02T03:00:00.000Z",
-        "start_date": "2000-01-01T02:00:00.000Z",
-        "deadline": "2022-01-01T03:00:00.000Z",
-        "__v": 0
-    },
+ 
     {
         "_id": "5ee7c4095aa7590e02cf57d1",
         "name": "Estagiario de exemplo",
@@ -255,6 +303,153 @@
     }
 ]
 
+//endereços embedados no usuario, schema no mongoose
+var enderecoSchema = new Schema({
+endereco : {[
+    { logradouro: { 
+        enum: [ "Rua", "Avenida", "Alameda", "Chácara", "Estrada", "Parque", null ],
+        description: "apenas os dados do enum"
+    }
+    numero:{type:number},
+    bairro:{},
+    complemento:{},
+    CEP:{},
+    cidade:{type: string},
+    estado:{},
+    },
+ ]}
+})
+
+ **** exemplo no schema direto
+ enderecos:{ 
+    type: Array,
+    itens:{
+          logradouro: String,
+          numero: Number,
+          bairro: String,
+          complemento: String,
+          cep: String,
+          cidade: String,
+          estado: String
+          }
+ },
+ telefones:{ 
+    type: Array,
+    itens:{
+          numero: String,
+          tipo: String
+          }
+ },
+****
+
 
 //colas regex e validadores
 $phone = '(11)99999-9999'; isValid = /^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))$/.test($phone)
+
+// exemplo array embeded
+{
+    name: 'Kate Monster',
+    ssn: '123-456-7890',
+    addresses : [
+       { street: '123 Sesame St', city: 'Anytown', cc: 'USA' },
+       { street: '123 Avenue Q', city: 'New York', cc: 'USA' }
+    ]
+  }
+
+  schema:[
+
+  ]
+
+  https://json-schema.org/understanding-json-schema/reference/array.html
+
+  // exemplos de validação
+  http://learnmongodbthehardway.com/schema/schemabasics/
+  https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-1
+  https://docs.mongodb.com/manual/core/schema-validation/
+  https://code.tutsplus.com/articles/an-introduction-to-mongoose-for-mongodb-and-nodejs--cms-29527
+
+  var bookSchema = mongoose.Schema({
+    _id: mongoose.Schema.Types.ObjectId,
+    title: String,
+    summary: String,
+    isbn: String,
+    thumbnail: Buffer,
+    author: { 
+        type: mongoose.Schema.Types.ObjectId, 
+        ref: 'Author'
+    },
+    ratings: [
+        {
+            summary: String,
+            detail: String,
+            numberOfStars: Number,
+            created: { 
+                type: Date,
+                default: Date.now
+            }
+        }
+    ],
+    created: { 
+        type: Date,
+        default: Date.now
+    }
+});
+
+****
+db.createCollection( "contacts",
+   { validator: { $or:
+      [
+         { phone: { $type: "string" } },
+         { email: { $regex: /@mongodb\.com$/ } },
+         { status: { $in: [ "Unknown", "Incomplete" ] } }
+      ]
+   }
+} )
+
+validadores e regex:
+email: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+cpf/cnpj: ([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})
+
+*****
+  db.createCollection("students", {
+    validator: {
+       $jsonSchema: {
+          bsonType: "object",
+          required: [ "name", "year", "major", "address" ],
+          properties: {
+             name: {
+                bsonType: "string",
+                description: "must be a string and is required"
+             },
+             year: {
+                bsonType: "int",
+                minimum: 2017,
+                maximum: 3017,
+                description: "must be an integer in [ 2017, 3017 ] and is required"
+             },
+             major: {
+                enum: [ "Math", "English", "Computer Science", "History", null ],
+                description: "can only be one of the enum values and is required"
+             },
+             gpa: {
+                bsonType: [ "double" ],
+                description: "must be a double if the field exists"
+             },
+             address: {
+                bsonType: "object",
+                required: [ "city" ],
+                properties: {
+                   street: {
+                      bsonType: "string",
+                      description: "must be a string if the field exists"
+                   },
+                   city: {
+                      bsonType: "string",
+                      "description": "must be a string and is required"
+                   }
+                }
+             }
+          }
+       }
+    }
+ })

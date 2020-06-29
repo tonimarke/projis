@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const esquema = mongoose.Schema({
+const SupervisorSchema = mongoose.Schema({
    name: {
       type: String
    },
@@ -14,8 +14,10 @@ const esquema = mongoose.Schema({
    rg: {
       type: String
    },
-   
-   
+   profissao: {
+      type: String
+   },
+      
 });
 /*
    Parâmetros de mongoose.model():
@@ -24,4 +26,4 @@ const esquema = mongoose.Schema({
    3º -> o nome da coleção (collection) onde os objetos
       criados a partir do modelo serão armazenados no MongoDB
 */
-module.exports = mongoose.model('Supervisor', esquema, 'supervisors')
+module.exports = mongoose.model('Supervisor', SupervisorSchema, 'supervisors')
