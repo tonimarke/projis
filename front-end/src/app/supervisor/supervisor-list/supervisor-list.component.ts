@@ -1,4 +1,3 @@
-import { SupervisorService } from './../supervisor.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,13 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SupervisorListComponent implements OnInit {
 
-  supervisors : any = []
+  constructor() { }
 
-  constructor(private supervisorsSrv: SupervisorService) { }
-
-  async ngOnInit() {
-    this.supervisors = await this.supervisorsSrv.listar()
-    console.log(this.supervisors)
+  ngOnInit(): void {
   }
 
 }

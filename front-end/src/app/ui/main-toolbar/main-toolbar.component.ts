@@ -2,14 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-main-toolbar',
-  template: `
-    <mat-toolbar  color="primary" class="mat-elevation-z5">
-      <app-main-menu></app-main-menu>
-      {{ appName }}
-    </mat-toolbar>
-  `,
-  styles: [
-  ]
+  templateUrl: './main-toolbar.component.html',
+  styleUrls: ['./main-toolbar.component.scss']
 })
 export class MainToolbarComponent implements OnInit {
   @Input() appName : string

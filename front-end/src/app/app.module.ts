@@ -8,10 +8,10 @@ import { MaterialModule } from './material/material.module';
 import { MainToolbarComponent } from './ui/main-toolbar/main-toolbar.component';
 import { MainMenuComponent } from './ui/main-menu/main-menu.component';
 import { MainFooterComponent } from './ui/main-footer/main-footer.component';
-import { ActionListComponent } from './action/action-list/action-list.component';
-import { CustomerListComponent } from './customer/customer-list/customer-list.component';
-import { InternListComponent } from './intern/intern-list/intern-list.component';
-import { OpponentListComponent } from './opponent/opponent-list/opponent-list.component';
+import { AcaoListComponent } from './acao/acao-list/acao-list.component';
+import { UsuarioListComponent } from './usuario/usuario-list/usuario-list.component';
+import { EstagiarioListComponent } from './estagiario/estagiario-list/estagiario-list.component';
+import { PcontrariaListComponent } from './pcontraria/pcontraria-list/pcontraria-list.component';
 import { SupervisorListComponent } from './supervisor/supervisor-list/supervisor-list.component';
 
 @NgModule({
@@ -20,10 +20,10 @@ import { SupervisorListComponent } from './supervisor/supervisor-list/supervisor
     MainToolbarComponent,
     MainMenuComponent,
     MainFooterComponent,
-    ActionListComponent,
-    CustomerListComponent,
-    InternListComponent,
-    OpponentListComponent,
+    AcaoListComponent,
+    UsuarioListComponent,
+    EstagiarioListComponent,
+    PcontrariaListComponent,
     SupervisorListComponent
   ],
   imports: [

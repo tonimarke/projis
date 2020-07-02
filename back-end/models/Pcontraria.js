@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const PcontrariaSchema = mongoose.Schema({
-   name: {
+   nome: {
       type: String
    },
    cpf: {

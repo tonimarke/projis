@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const Estagiario = require('./Estagiarios')
 
 const UsuarioSchema = mongoose.Schema({
-   name: {
+   nome: {
       type: String,
       required: true
    },

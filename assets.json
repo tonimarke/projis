@@ -453,3 +453,48 @@ cpf/cnpj: ([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3
        }
     }
  })
+
+
+
+
+
+
+
+ *************** colas aulas
+ #19
+    criacao dos modulos no material
+    post do blog pra adicao, e imports:
+    
+        cd front-end
+        ng generate module material
+
+        troca o conteudo pelo post do blog (./front-end/src/app/material/material.module.ts)
+
+        configurar no app.module.ts pra adicionar o import
+        import { MaterialModule } from './material/material.module';
+
+
+
+gerando os modulos
+cat colas.txt
+cd front-end
+    gerando os fronts
+ng generate component ui/main-toolbar
+    dentro do app.component.ts, seta as variaveis do nome do app
+    mas vao ficar invocadas no var appName dentro do main-toolbar.component.ts
+
+alteração pra ficar separadas as configuraçoes e html no angular novo
+    edita o angular.json na base da aplicaçaõ e troca as linhas de template e estilo
+    "schematics": {
+        "@schematics/angular:component": {
+          "inlineTemplate": false,
+          "inlineStyle": false,
+          "style": "scss",
+          "skipTests": true
+        },} 
+
+  
+
+
+ng g c usuario/usuario-list && ng g c estagiario/estagiario-list && ng g c pcontraria/pcontraria-list && ng g c supervisor/supervisor-list
+   
