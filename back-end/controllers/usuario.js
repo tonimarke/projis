@@ -1,4 +1,4 @@
-const Usuario = require('../models/Usuarios')
+const Usuario = require('../models/Usuario')
 
 const controller = {} // Objeto vazio
 

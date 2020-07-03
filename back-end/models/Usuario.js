@@ -1,9 +1,9 @@
 const mongoose = require('mongoose')
+//const Estagiario = require('./Estagiarios')
 
-const EstagiarioSchema = mongoose.Schema({
-   //_id: mongoose.Schema.Types.ObjectId,
+const UsuarioSchema = mongoose.Schema({
    nome: {
-      type:String,
+      type: String,
       required: true
    },
    cpf: {
@@ -14,8 +14,6 @@ const EstagiarioSchema = mongoose.Schema({
       }
    },
    rg: String,
-   email: String,
-   data_nascimento: Date,
    enderecos:{ 
       type: Array,
       itens:{
@@ -35,16 +33,14 @@ const EstagiarioSchema = mongoose.Schema({
             tipo: String
             }
    },
-   inicio_vinculo: { 
-       type: Date,
-       default: Date.now
+   data_nascimento: Date,
+   registrado_por:{
+      type: mongoose.ObjectId,
+      ref: 'Estagiario', // Nome do model referenciado
+      required: true
    },
-   fim_vinculo: Date,
-   curso: String,
-   status: Boolean
-});
+})
 
-mongoose.model('Estagiario', EstagiarioSchema);
 
 /*
    Parâmetros de mongoose.model():
@@ -53,4 +49,4 @@ mongoose.model('Estagiario', EstagiarioSchema);
    3º -> o nome da coleção (collection) onde os objetos
       criados a partir do modelo serão armazenados no MongoDB
 */
-module.exports = mongoose.model('Estagiario', EstagiarioSchema, 'estagiarios')
+module.exports = mongoose.model('Usuario', UsuarioSchema, 'usuarios')

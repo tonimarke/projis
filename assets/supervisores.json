@@ -1,0 +1,26 @@
+[
+    {
+        "_id": "5efe47e077d2cf4c51acd8ce",
+        "nome": "Eliana Siqueira",
+        "cpf": "854.486.854-77",
+        "rg": "215-485-77",
+        "profissao": "Advogado",
+        "__v": 0
+    },
+    {
+        "_id": "5efe485d77d2cf4c51acd8cf",
+        "nome": "Silvia Bernadete",
+        "cpf": "124.486.454-77",
+        "rg": "8425-125-76",
+        "profissao": "Advogado",
+        "__v": 0
+    },
+    {
+        "_id": "5efe485d77d2cf4c51acd8d0",
+        "nome": "Luciana Soarez",
+        "cpf": "174.486.854-71",
+        "rg": "725-125-72",
+        "profissao": "Assistente Social",
+        "__v": 0
+    }
+]

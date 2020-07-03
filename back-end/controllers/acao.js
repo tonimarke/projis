@@ -1,6 +1,4 @@
-const Acao = require('../models/Acoes')
-const Estagiario = require('../models/Estagiarios')
-const Supervisor = require('../models/Supervisor')
+const Acao = require('../models/Acao')
 
 const controller = {} // Objeto vazio
 
@@ -24,18 +22,18 @@ controller.listar = async (req, res) => {
       busca(req, res)
    }
    else {
-   
+      
       try {
          // find() sem parâmetros: retorna todos
          // populate(): preenche o campo relacionado com as informações
          // da entidade relacionada
-         const lista = await Acao.find().populate('pcontraria').populate('usuario');
+         const lista = await Acao.find().populate('pcontraria').populate('usuario').populate('supervisor').populate('estagiario');
          
          // Exemplo de populate() trazendo apenas dois atributos da entidade relacionada
          // (no caso, nome e cpf)
-         //const lista = await Acao.find().populate({path: 'customer', select: 'nome cpf'})
+         //const lista = await Acao.find().populate({path: 'usuario', select: 'nome cpf'})
          
-         res.send(lista) // O status HTTP 200 (OK) é implícito
+         res.send(lista) // HTTP 20O status usuario
       }
       catch(erro) {
          console.log(erro)

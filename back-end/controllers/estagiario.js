@@ -1,4 +1,4 @@
-const Estagiario = require('../models/Estagiarios')
+const Estagiario = require('../models/Estagiario')
 
 const controller = {} // Objeto vazio
 

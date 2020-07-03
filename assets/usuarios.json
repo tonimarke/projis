@@ -1,0 +1,201 @@
+[
+    {
+        "enderecos": [
+            {
+                "logradouro": "Rua Maceió",
+                "numero": "21",
+                "bairro": "Jardim Leporace",
+                "complemento": "Rotatória Amin Kalil",
+                "cep": "12548-864",
+                "cidade": "Ribeirão Preto",
+                "estado": "SP"
+            },
+            {
+                "logradouro": "Avenida Presidente Vargas",
+                "numero": "766",
+                "bairro": "Centro",
+                "cep": "14405-800",
+                "cidade": "Franca",
+                "estado": "SP"
+            }
+        ],
+        "telefones": [
+            {
+                "numero": "(16)98451-2222",
+                "tipo": "Celular"
+            },
+            {
+                "numero": "(16)3701-5678",
+                "tipo": "Fixo"
+            }
+        ],
+        "_id": "5efe41685d647c4bf82a91bd",
+        "nome": "José das Couves",
+        "cpf": "123.555.444-44",
+        "rg": "888.444-77",
+        "data_nascimento": "1975-04-12T03:00:00.000Z",
+        "registrado_por": {
+            "enderecos": [
+                {
+                    "logradouro": "Rua dos Marcondes",
+                    "numero": "282",
+                    "bairro": "Parque dos Ipês",
+                    "complemento": "Rotatória da Mabel",
+                    "cep": "15548-874",
+                    "cidade": "Miguelópolis",
+                    "estado": "SP"
+                },
+                {
+                    "logradouro": "Avenida Presidente Vargas",
+                    "numero": "1066",
+                    "bairro": "Centro",
+                    "cep": "14405-800",
+                    "cidade": "Franca",
+                    "estado": "SP"
+                }
+            ],
+            "telefones": [
+                {
+                    "numero": "(16)98456-8458",
+                    "tipo": "Celular"
+                },
+                {
+                    "numero": "(17)3745-8458",
+                    "tipo": "Fixo"
+                }
+            ],
+            "_id": "5ef954dda1b2657a07f079c1",
+            "nome": "Maria Joaquina",
+            "cpf": "123.456.133-0",
+            "rg": "987.622-77",
+            "email": "mariajoaquina@zmail.com",
+            "data_nascimento": "1955-11-07T03:00:00.000Z",
+            "inicio_vinculo": null,
+            "fim_vinculo": "2023-01-01T03:00:00.000Z",
+            "curso": "Serviço Social",
+            "status": true,
+            "__v": 0
+        },
+        "__v": 0
+    },
+    {
+        "enderecos": [
+            {
+                "logradouro": "Rua Salvador",
+                "numero": "215",
+                "bairro": "Jardim Brasilândia",
+                "cep": "14658-864",
+                "cidade": "Franca",
+                "estado": "SP"
+            }
+        ],
+        "telefones": [
+            {
+                "numero": "(16)99854-2342",
+                "tipo": "Celular"
+            },
+            {
+                "numero": "(16)3706-4852",
+                "tipo": "Fixo"
+            }
+        ],
+        "_id": "5efe425f5d647c4bf82a91be",
+        "nome": "Maria das Cruzes",
+        "cpf": "883.555.111-44",
+        "rg": "222.464-37",
+        "data_nascimento": "1971-05-19T03:00:00.000Z",
+        "registrado_por": {
+            "enderecos": [
+                {
+                    "logradouro": "Avenida Brasil",
+                    "numero": "4868",
+                    "cidade": "Franca",
+                    "estado": "SP"
+                }
+            ],
+            "telefones": [
+                {
+                    "numero": "(16)98744-1238",
+                    "tipo": "Celular"
+                }
+            ],
+            "_id": "5efe3b225d647c4bf82a91ba",
+            "nome": "José Siqueira",
+            "cpf": "123.456.111-0",
+            "rg": "987.648-77",
+            "email": "josedasilva@zemail.com",
+            "data_nascimento": "1947-10-02T03:00:00.000Z",
+            "inicio_vinculo": null,
+            "fim_vinculo": "2022-01-01T03:00:00.000Z",
+            "curso": "Direito",
+            "status": true,
+            "__v": 0
+        },
+        "__v": 0
+    },
+    {
+        "enderecos": [
+            {
+                "logradouro": "Avenida Brasil",
+                "numero": "1005",
+                "bairro": "Centro",
+                "cep": "14408-800",
+                "cidade": "Franca",
+                "estado": "SP"
+            }
+        ],
+        "telefones": [
+            {
+                "numero": "(16)99451-2156",
+                "tipo": "Celular"
+            }
+        ],
+        "_id": "5efe44135d647c4bf82a91bf",
+        "nome": "Enzo Fransérgio Gianechini",
+        "cpf": "123.555.564-44",
+        "rg": "888.444-77",
+        "data_nascimento": "1984-08-17T03:00:00.000Z",
+        "registrado_por": {
+            "enderecos": [
+                {
+                    "logradouro": "Avenida dos Siqueiras",
+                    "numero": "8002",
+                    "bairro": "Centro",
+                    "cep": "14593-274",
+                    "cidade": "Franca",
+                    "estado": "SP"
+                },
+                {
+                    "logradouro": "Rua Direita",
+                    "numero": "4667",
+                    "bairro": "Bras",
+                    "cep": "11405-500",
+                    "cidade": "São Paulo",
+                    "estado": "SP"
+                }
+            ],
+            "telefones": [
+                {
+                    "numero": "(11)97456-1111",
+                    "tipo": "Celular"
+                },
+                {
+                    "numero": "(16)3705-5833",
+                    "tipo": "Fixo"
+                }
+            ],
+            "_id": "5efe3f7b5d647c4bf82a91bb",
+            "nome": "Leticia Cardoso Madeira",
+            "cpf": "322.456.223-0",
+            "rg": "154.622-71",
+            "email": "letcardoso@zmail.com",
+            "data_nascimento": "1989-10-11T03:00:00.000Z",
+            "fim_vinculo": "2023-01-01T03:00:00.000Z",
+            "curso": "Serviço Social",
+            "status": true,
+            "inicio_vinculo": "2020-07-02T20:11:39.227Z",
+            "__v": 0
+        },
+        "__v": 0
+    }
+]

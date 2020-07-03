@@ -1,8 +1,4 @@
 const mongoose = require('mongoose')
-const Usuario = require('./Usuarios')
-const Pcontraria = require('./Pcontraria')
-const Supervisor = require('./Supervisor')
-const Estagiario = require('./Estagiarios')
 
 const AcaoSchema = mongoose.Schema({
    nomeAcao: {
@@ -15,7 +11,7 @@ const AcaoSchema = mongoose.Schema({
    },
    usuario: {
       type: mongoose.ObjectId,
-      ref: 'Usuarios'
+      ref: 'Usuario'
    },
    pcontraria: {
        type: mongoose.ObjectId,
@@ -31,7 +27,7 @@ const AcaoSchema = mongoose.Schema({
    },
    estagiario: {
       type: mongoose.ObjectId,
-      rev: 'Estagiarios'
+      ref: 'Estagiario'
    },
    providencias: {
       type: String,

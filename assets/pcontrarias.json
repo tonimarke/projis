@@ -1,0 +1,76 @@
+[
+    {
+        "enderecos": [
+            {
+                "logradouro": "Avenida XIII",
+                "numero": "8022",
+                "bairro": "Vila Seixas",
+                "complemento": "Parque Industrial",
+                "cep": "14003-274",
+                "cidade": "Franca",
+                "estado": "SP"
+            },
+            {
+                "logradouro": "Rua Campos Salles",
+                "numero": "67",
+                "bairro": "Campos Elíseos",
+                "cep": "14054-500",
+                "cidade": "Batatais",
+                "estado": "SP"
+            }
+        ],
+        "telefones": [
+            {
+                "numero": "(16)99956-1311",
+                "tipo": "Celular"
+            },
+            {
+                "numero": "(16)3702-1233",
+                "tipo": "Fixo"
+            }
+        ],
+        "_id": "5efe4ca877d2cf4c51acd8d1",
+        "nome": "Zeca Urubu",
+        "cpf": "015.184.485-22",
+        "rg": "8541558-77",
+        "ocupacao": "Pedreiro",
+        "__v": 0
+    },
+    {
+        "enderecos": [
+            {
+                "logradouro": "Rua Almirante Abrão",
+                "numero": "22",
+                "bairro": "Parque Progresso",
+                "complemento": "Condomínio dos Ssapateiros",
+                "cep": "14003-274",
+                "cidade": "Franca",
+                "estado": "SP"
+            },
+            {
+                "logradouro": "Rua Borba Gato",
+                "numero": "167",
+                "bairro": "Cruzeiro",
+                "cep": "13054-500",
+                "cidade": "Belo Horizonte",
+                "estado": "MG"
+            }
+        ],
+        "telefones": [
+            {
+                "numero": "(31)97418-1331",
+                "tipo": "Celular"
+            },
+            {
+                "numero": "(16)3702-1287",
+                "tipo": "Fixo"
+            }
+        ],
+        "_id": "5efe4e6677d2cf4c51acd8d2",
+        "nome": "Joaquim Nicodemus",
+        "cpf": "185.124.485-31",
+        "rg": "884558-77",
+        "ocupacao": "Vendedor",
+        "__v": 0
+    }
+]

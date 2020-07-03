@@ -1,0 +1,139 @@
+[
+    {
+        "enderecos": [
+            {
+                "logradouro": "Rua dos Marcondes",
+                "numero": "282",
+                "bairro": "Parque dos Ipês",
+                "complemento": "Rotatória da Mabel",
+                "cep": "15548-874",
+                "cidade": "Miguelópolis",
+                "estado": "SP"
+            },
+            {
+                "logradouro": "Avenida Presidente Vargas",
+                "numero": "1066",
+                "bairro": "Centro",
+                "cep": "14405-800",
+                "cidade": "Franca",
+                "estado": "SP"
+            }
+        ],
+        "telefones": [
+            {
+                "numero": "(16)98456-8458",
+                "tipo": "Celular"
+            },
+            {
+                "numero": "(17)3745-8458",
+                "tipo": "Fixo"
+            }
+        ],
+        "_id": "5ef954dda1b2657a07f079c1",
+        "nome": "Maria Joaquina",
+        "cpf": "123.456.133-0",
+        "rg": "987.622-77",
+        "email": "mariajoaquina@zmail.com",
+        "data_nascimento": "1955-11-07T03:00:00.000Z",
+        "inicio_vinculo": null,
+        "fim_vinculo": "2023-01-01T03:00:00.000Z",
+        "curso": "SS",
+        "status": true,
+        "__v": 0
+    },
+    {
+        "enderecos": [
+            {
+                "logradouro": "Avenida Brasil",
+                "numero": "4868",
+                "cidade": "Franca",
+                "estado": "SP"
+            }
+        ],
+        "telefones": [
+            {
+                "numero": "(16)98744-1238",
+                "tipo": "Celular"
+            }
+        ],
+        "_id": "5efe3b225d647c4bf82a91ba",
+        "nome": "José da Silva",
+        "cpf": "123.456.111-0",
+        "rg": "987.648-77",
+        "email": "josedasilva@zemail.com",
+        "data_nascimento": "1947-10-02T03:00:00.000Z",
+        "inicio_vinculo": null,
+        "fim_vinculo": "2022-01-01T03:00:00.000Z",
+        "curso": "DI",
+        "status": true,
+        "__v": 0
+    },
+    {
+        "enderecos": [
+            {
+                "logradouro": "Avenida dos Siqueiras",
+                "numero": "8002",
+                "bairro": "Centro",
+                "cep": "14593-274",
+                "cidade": "Franca",
+                "estado": "SP"
+            },
+            {
+                "logradouro": "Rua Direita",
+                "numero": "4667",
+                "bairro": "Bras",
+                "cep": "11405-500",
+                "cidade": "São Paulo",
+                "estado": "SP"
+            }
+        ],
+        "telefones": [
+            {
+                "numero": "(11)97456-1111",
+                "tipo": "Celular"
+            },
+            {
+                "numero": "(16)3705-5833",
+                "tipo": "Fixo"
+            }
+        ],
+        "_id": "5efe3f7b5d647c4bf82a91bb",
+        "nome": "Leticia Cardoso Madeira",
+        "cpf": "322.456.223-0",
+        "rg": "154.622-71",
+        "email": "letcardoso@zmail.com",
+        "data_nascimento": "1989-10-11T03:00:00.000Z",
+        "fim_vinculo": "2023-01-01T03:00:00.000Z",
+        "curso": "SS",
+        "status": true,
+        "inicio_vinculo": "2020-07-02T20:11:39.227Z",
+        "__v": 0
+    },
+    {
+        "enderecos": [
+            {
+                "logradouro": "Avenida Alonso y Alonso",
+                "numero": "1001",
+                "cidade": "Franca",
+                "estado": "SP"
+            }
+        ],
+        "telefones": [
+            {
+                "numero": "(16)99944-2381",
+                "tipo": "Celular"
+            }
+        ],
+        "_id": "5efe3f7b5d647c4bf82a91bc",
+        "nome": "Gustavo Marquezine",
+        "cpf": "322.456.151-0",
+        "rg": "745.648-47",
+        "email": "gumarque@zemail.com",
+        "data_nascimento": "1993-10-02T03:00:00.000Z",
+        "fim_vinculo": "2022-01-01T03:00:00.000Z",
+        "curso": "DI",
+        "status": true,
+        "inicio_vinculo": "2020-07-02T20:11:39.228Z",
+        "__v": 0
+    }
+]
