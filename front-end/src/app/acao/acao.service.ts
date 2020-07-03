@@ -6,6 +6,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AcaoService {
 
+  // injeção de dependencia: chama o angular pra injetar nos parametros
+  // do construtor as dependencias que precisamos na classe. Assim não 
+  // precisa criar intanciar manualmente as dependencias (auto-import)
   constructor(private http: HttpClient) { }
 
   listar(){

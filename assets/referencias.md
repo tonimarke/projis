@@ -189,10 +189,15 @@ alteração pra ficar separadas as configuraçoes e html no angular novo
         },} 
 
   
-
-
+criando servico de busca e listagem
+   ng generate component grupo/grupo-list
 ng g c usuario/usuario-list && ng g c estagiario/estagiario-list && ng g c pcontraria/pcontraria-list && ng g c supervisor/supervisor-list
    
+## aula 20
+gerando os servicos pro frontend buscar no back
+   ng generate service acao/acao
+ng g s acao/acao && ng g s estagiario/estagiario && ng g s pcontraria/pcontraria && ng g s usuario/usuario && ng g s supervisor/supervisor
+
 
 
 trocando a paleta de cores pra id visual da unesp #0093DD
