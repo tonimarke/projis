@@ -27,7 +27,7 @@ controller.listar = async (req, res) => {
          // find() sem parâmetros: retorna todos
          // populate(): preenche o campo relacionado com as informações
          // da entidade relacionada
-         const lista = await Acao.find().populate('pcontraria').populate('usuario').populate('supervisor').populate('estagiario');
+         const lista = await Acao.find().populate('usuario').populate('pcontraria').populate('supervisor').populate('estagiario');
          
          // Exemplo de populate() trazendo apenas dois atributos da entidade relacionada
          // (no caso, nome e cpf)
