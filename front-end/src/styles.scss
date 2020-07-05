@@ -4,6 +4,15 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.mat-table {
+    width: 100%;
+}
+
+#container {
+    padding: 20px 38px;
+}
+
+// Aplicação de tema e codigo de cor da unesp, baseado no sgcd #346786 e #0093dd
 @import '~@angular/material/theming';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 

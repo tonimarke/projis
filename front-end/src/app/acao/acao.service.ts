@@ -14,4 +14,8 @@ export class AcaoService {
   listar(){
     return this.http.get('http://localhost:3000/acao').toPromise()
   }
+
+  excluir(id: string) {
+    return this.http.request('DELETE', 'http://localhost:3000/acao', { body: {_id: id}}).toPromise()
+  }
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { EstagiarioService } from './../estagiario.service';
+
 
 @Component({
   selector: 'app-estagiario-list',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EstagiarioListComponent implements OnInit {
 
-  constructor() { }
+  estagiarios : any = []
+  displayedColumns: any = ['nome', 'cpf', 'enderecos', 'telefones','inicio_vinculo', 'fim_vinculo','excluir']
 
-  ngOnInit(): void {
+  constructor(private estagiarioSrv: EstagiarioService) {}
+
+  async ngOnInit(){
+    this.estagiarios = await this.estagiarioSrv.listar()
+    console.log(this.estagiarios)
   }
-
 }

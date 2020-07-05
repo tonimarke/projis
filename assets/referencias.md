@@ -1,3 +1,8 @@
+# nested pros enderecos e telefones
+https://stackblitz.com/edit/angular-nested-mat-table?file=app%2Ftable-expandable-rows-example.ts
+
+
+
 # endereços embedados no usuario, schema no mongoose
 var enderecoSchema = new Schema({
 endereco : {[
@@ -198,6 +203,8 @@ gerando os servicos pro frontend buscar no back
    ng generate service acao/acao
 ng g s acao/acao && ng g s estagiario/estagiario && ng g s pcontraria/pcontraria && ng g s usuario/usuario && ng g s supervisor/supervisor
 
+no back-end:
+   yarn add cors
 
 
 trocando a paleta de cores pra id visual da unesp #0093DD
@@ -275,6 +282,8 @@ $mat-unesp-accent: (
     )
 );
 
+## rodar o vetor dentro do find
+ngfor
 
 
 

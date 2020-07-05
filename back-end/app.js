@@ -25,9 +25,6 @@ app.use('/', indexRouter);
 const acao = require('./routes/acao')
 app.use('/acao', acao)
 
-const usuario = require('./routes/usuario')
-app.use('/usuario', usuario)
-
 const estagiario = require('./routes/estagiario')
 app.use('/estagiario', estagiario)
 
@@ -37,5 +34,7 @@ app.use('/pcontraria', pcontraria)
 const supervisor = require('./routes/supervisor')
 app.use('/supervisor', supervisor)
 
+const usuario = require('./routes/usuario')
+app.use('/usuario', usuario)
 
 module.exports = app;

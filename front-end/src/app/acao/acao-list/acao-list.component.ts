@@ -10,8 +10,10 @@ import { Component, OnInit } from '@angular/core';
 export class AcaoListComponent implements OnInit {
 
   acoes : any = [] // vetor vazio
-  displayedColumns: any = ['nomeAcao', 'tipoacao', 'usuario', 'pcontraria', 'data_atendimento', 'supervisor', 'estagiario','providencias']
- 
+  // display com todas as colunas para referencia
+  // displayedColumns: any = ['nomeAcao', 'tipoacao', 'usuario', 'pcontraria', 'data_atendimento', 'supervisor', 'estagiario','providencias']
+  displayedColumns: any = ['nomeAcao', 'tipoacao', 'usuario', 'data_atendimento', 'estagiario','providencias', 'excluir']
+  
   constructor(private acaoSrv: AcaoService) { }
 
   async ngOnInit() {

@@ -12,10 +12,6 @@ const routes: Routes = [
     component: AcaoListComponent
   },
   {
-    path: 'usuario', 
-    component: UsuarioListComponent
-  },
-  {
     path: 'estagiario', 
     component: EstagiarioListComponent
   },
@@ -26,6 +22,10 @@ const routes: Routes = [
   {
     path: 'supervisor', 
     component: SupervisorListComponent
+  },
+  {
+    path: 'usuario', 
+    component: UsuarioListComponent
   },
 ];
 
