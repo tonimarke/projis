@@ -210,6 +210,9 @@ no back-end:
 ## aula  21 cria o modulo do confirma
 front-end> ng g c ui/confirm-dlg
 
+## aula 22 modulos de edicao 
+   ng g c estagiario/estagiario-form
+
 trocando a paleta de cores pra id visual da unesp #0093DD
 http://www.carbonrider.com/2019/01/30/material-theme-with-angular-7-change-primary-and-accent-color/
 http://mcg.mbitson.com
@@ -289,6 +292,42 @@ $mat-unesp-accent: (
 ngfor
 
 
+## expandable rows table material.io
+<table mat-table
+       [dataSource]="dataSource" multiTemplateDataRows
+       class="mat-elevation-z8">
+  <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay">
+    <th mat-header-cell *matHeaderCellDef> {{column}} </th>
+    <td mat-cell *matCellDef="let element"> {{element[column]}} </td>
+  </ng-container>
+
+  <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+  <ng-container matColumnDef="expandedDetail">
+    <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplay.length">
+      <div class="example-element-detail"
+           [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+        <div class="example-element-diagram">
+          <div class="example-element-position"> {{element.position}} </div>
+          <div class="example-element-symbol"> {{element.symbol}} </div>
+          <div class="example-element-name"> {{element.name}} </div>
+          <div class="example-element-weight"> {{element.weight}} </div>
+        </div>
+        <div class="example-element-description">
+          {{element.description}}
+          <span class="example-element-description-attribution"> -- Wikipedia </span>
+        </div>
+      </div>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+  <tr mat-row *matRowDef="let element; columns: columnsToDisplay;"
+      class="example-element-row"
+      [class.example-expanded-row]="expandedElement === element"
+      (click)="expandedElement = expandedElement === element ? null : element">
+  </tr>
+  <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+</table>
 
 
 

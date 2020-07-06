@@ -1,3 +1,4 @@
+import { EstagiarioFormComponent } from './estagiario/estagiario-form/estagiario-form.component';
 import { PcontrariaListComponent } from './pcontraria/pcontraria-list/pcontraria-list.component';
 import { EstagiarioListComponent } from './estagiario/estagiario-list/estagiario-list.component';
 import { UsuarioListComponent } from './usuario/usuario-list/usuario-list.component';
@@ -12,19 +13,27 @@ const routes: Routes = [
     component: AcaoListComponent
   },
   {
-    path: 'estagiario', 
+    path: 'estagiario',
     component: EstagiarioListComponent
   },
   {
-    path: 'pcontraria', 
+    path: 'estagiario/novo', // cadastra um novo stag
+    component: EstagiarioFormComponent
+  },
+  {
+    path: 'estagiario/:id', // editar um stag existente
+    component: EstagiarioFormComponent
+  },
+  {
+    path: 'pcontraria',
     component: PcontrariaListComponent
   },
   {
-    path: 'supervisor', 
+    path: 'supervisor',
     component: SupervisorListComponent
   },
   {
-    path: 'usuario', 
+    path: 'usuario',
     component: UsuarioListComponent
   },
 ];

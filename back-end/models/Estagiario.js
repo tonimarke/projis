@@ -3,41 +3,41 @@ const mongoose = require('mongoose')
 const EstagiarioSchema = mongoose.Schema({
    //_id: mongoose.Schema.Types.ObjectId,
    nome: {
-      type:String,
+      type: String,
       required: true
    },
    cpf: {
       type: String,
       required: true,
-      index: { 
+      index: {
          unique: true // Não deixa repetir CPF no cadastro
       }
    },
    rg: String,
    email: String,
    data_nascimento: Date,
-   enderecos:{ 
+   enderecos: {
       type: Array,
-      itens:{
-            logradouro: String,
-            numero: Number,
-            bairro: String,
-            complemento: String,
-            cep: String,
-            cidade: String,
-            estado: String
-            }
+      itens: {
+         logradouro: String,
+         numero: Number,
+         bairro: String,
+         complemento: String,
+         cep: String,
+         cidade: String,
+         estado: String
+      }
    },
-   telefones:{ 
+   telefones: {
       type: Array,
-      itens:{
-            numero: String,
-            tipo: String
-            }
+      itens: {
+         numero: String,
+         tipo: String
+      }
    },
-   inicio_vinculo: { 
-       type: Date,
-       default: Date.now
+   inicio_vinculo: {
+      type: Date,
+      default: Date.now
    },
    fim_vinculo: Date,
    curso: {

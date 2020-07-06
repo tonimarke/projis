@@ -1,8 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~material-design-icons/iconfont/material-icons.css";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 .mat-table {
     width: 100%;
@@ -12,15 +19,27 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding: 20px 38px;
 }
 
+.botao-novo {
+    font-size: 130%;
+    // float: right;
+}
+
+.botao-novo-container {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
 // esconder os botões de exclusão das tabelas de listagem até que o 
 // mouse pare sobre a linha do registro
 .mat-row {
-    button {
+    .mat-raised-button {
         visibility: hidden;
     }
+
     &:hover {
         filter: brightness(110%);
-        button{
+
+        .mat-raised-button {
             visibility: visible;
         }
     }
@@ -31,8 +50,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 @import '~@angular/material/theming';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-$mat-unesp-primary: (
-    50 : #e7edf0,
+$mat-unesp-primary: (50 : #e7edf0,
     100 : #c2d1db,
     200 : #9ab3c3,
     300 : #7195aa,
@@ -46,8 +64,7 @@ $mat-unesp-primary: (
     A200 : #5db1ff,
     A400 : #2a98ff,
     A700 : #118cff,
-    contrast: (
-        50 : #000000,
+    contrast: (50 : #000000,
         100 : #000000,
         200 : #000000,
         300 : #000000,
@@ -61,11 +78,9 @@ $mat-unesp-primary: (
         A200 : #000000,
         A400 : #000000,
         A700 : #ffffff,
-    )
-);
+    ));
 
-$mat-unesp-accent: (
-    50 : #e0f2fb,
+$mat-unesp-accent: (50 : #e0f2fb,
     100 : #b3dff5,
     200 : #80c9ee,
     300 : #4db3e7,
@@ -79,8 +94,7 @@ $mat-unesp-accent: (
     A200 : #bcd9ff,
     A400 : #89bdff,
     A700 : #6fafff,
-    contrast: (
-        50 : #000000,
+    contrast: (50 : #000000,
         100 : #000000,
         200 : #000000,
         300 : #000000,
@@ -94,8 +108,7 @@ $mat-unesp-accent: (
         A200 : #000000,
         A400 : #000000,
         A700 : #000000,
-    )
-);
+    ));
 
 $primary: mat-palette($mat-unesp-primary);
 $accent: mat-palette($mat-unesp-accent);

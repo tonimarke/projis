@@ -14,6 +14,8 @@ import { EstagiarioListComponent } from './estagiario/estagiario-list/estagiario
 import { PcontrariaListComponent } from './pcontraria/pcontraria-list/pcontraria-list.component';
 import { SupervisorListComponent } from './supervisor/supervisor-list/supervisor-list.component';
 import { ConfirmDlgComponent } from './ui/confirm-dlg/confirm-dlg.component';
+import { EstagiarioFormComponent } from './estagiario/estagiario-form/estagiario-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,14 +28,16 @@ import { ConfirmDlgComponent } from './ui/confirm-dlg/confirm-dlg.component';
     EstagiarioListComponent,
     PcontrariaListComponent,
     SupervisorListComponent,
-    ConfirmDlgComponent
+    ConfirmDlgComponent,
+    EstagiarioFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,7 +13,7 @@ import { ConfirmDlgComponent } from 'src/app/ui/confirm-dlg/confirm-dlg.componen
 export class EstagiarioListComponent implements OnInit {
 
   estagiarios : any = []
-  displayedColumns: any = ['nome', 'cpf', 'enderecos', 'telefones','inicio_vinculo', 'fim_vinculo','excluir']
+  displayedColumns: any = ['nome', 'cpf', 'enderecos', 'telefones','inicio_vinculo', 'fim_vinculo','editar', 'excluir']
 
   constructor(
     private estagiarioSrv: EstagiarioService,

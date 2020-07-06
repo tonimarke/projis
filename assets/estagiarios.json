@@ -1,7 +1,5 @@
-[
-    {
-        "enderecos": [
-            {
+[{
+        "enderecos": [{
                 "logradouro": "Rua dos Marcondes",
                 "numero": "282",
                 "bairro": "Parque dos Ipês",
@@ -19,8 +17,7 @@
                 "estado": "SP"
             }
         ],
-        "telefones": [
-            {
+        "telefones": [{
                 "numero": "(16)98456-8458",
                 "tipo": "Celular"
             },
@@ -42,20 +39,16 @@
         "__v": 0
     },
     {
-        "enderecos": [
-            {
-                "logradouro": "Avenida Brasil",
-                "numero": "4868",
-                "cidade": "Franca",
-                "estado": "SP"
-            }
-        ],
-        "telefones": [
-            {
-                "numero": "(16)98744-1238",
-                "tipo": "Celular"
-            }
-        ],
+        "enderecos": [{
+            "logradouro": "Avenida Brasil",
+            "numero": "4868",
+            "cidade": "Franca",
+            "estado": "SP"
+        }],
+        "telefones": [{
+            "numero": "(16)98744-1238",
+            "tipo": "Celular"
+        }],
         "_id": "5efe3b225d647c4bf82a91ba",
         "nome": "José da Silva",
         "cpf": "123.456.111-0",
@@ -69,8 +62,7 @@
         "__v": 0
     },
     {
-        "enderecos": [
-            {
+        "enderecos": [{
                 "logradouro": "Avenida dos Siqueiras",
                 "numero": "8002",
                 "bairro": "Centro",
@@ -87,8 +79,7 @@
                 "estado": "SP"
             }
         ],
-        "telefones": [
-            {
+        "telefones": [{
                 "numero": "(11)97456-1111",
                 "tipo": "Celular"
             },
@@ -110,20 +101,16 @@
         "__v": 0
     },
     {
-        "enderecos": [
-            {
-                "logradouro": "Avenida Alonso y Alonso",
-                "numero": "1001",
-                "cidade": "Franca",
-                "estado": "SP"
-            }
-        ],
-        "telefones": [
-            {
-                "numero": "(16)99944-2381",
-                "tipo": "Celular"
-            }
-        ],
+        "enderecos": [{
+            "logradouro": "Avenida Alonso y Alonso",
+            "numero": "1001",
+            "cidade": "Franca",
+            "estado": "SP"
+        }],
+        "telefones": [{
+            "numero": "(16)99944-2381",
+            "tipo": "Celular"
+        }],
         "_id": "5efe3f7b5d647c4bf82a91bc",
         "nome": "Gustavo Marquezine",
         "cpf": "322.456.151-0",
