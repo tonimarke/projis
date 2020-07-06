@@ -13,6 +13,7 @@ import { UsuarioListComponent } from './usuario/usuario-list/usuario-list.compon
 import { EstagiarioListComponent } from './estagiario/estagiario-list/estagiario-list.component';
 import { PcontrariaListComponent } from './pcontraria/pcontraria-list/pcontraria-list.component';
 import { SupervisorListComponent } from './supervisor/supervisor-list/supervisor-list.component';
+import { ConfirmDlgComponent } from './ui/confirm-dlg/confirm-dlg.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SupervisorListComponent } from './supervisor/supervisor-list/supervisor
     UsuarioListComponent,
     EstagiarioListComponent,
     PcontrariaListComponent,
-    SupervisorListComponent
+    SupervisorListComponent,
+    ConfirmDlgComponent
   ],
   imports: [
     BrowserModule,

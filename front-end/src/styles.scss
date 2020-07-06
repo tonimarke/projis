@@ -12,6 +12,21 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding: 20px 38px;
 }
 
+// esconder os botões de exclusão das tabelas de listagem até que o 
+// mouse pare sobre a linha do registro
+.mat-row {
+    button {
+        visibility: hidden;
+    }
+    &:hover {
+        filter: brightness(110%);
+        button{
+            visibility: visible;
+        }
+    }
+}
+
+
 // Aplicação de tema e codigo de cor da unesp, baseado no sgcd #346786 e #0093dd
 @import '~@angular/material/theming';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";

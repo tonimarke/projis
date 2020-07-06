@@ -161,7 +161,7 @@ cpf/cnpj: ([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3
 
 
  *************** colas aulas
- #19
+ # 19
     criacao dos modulos no material
     post do blog pra adicao, e imports:
     
@@ -206,6 +206,9 @@ ng g s acao/acao && ng g s estagiario/estagiario && ng g s pcontraria/pcontraria
 no back-end:
    yarn add cors
 
+
+## aula  21 cria o modulo do confirma
+front-end> ng g c ui/confirm-dlg
 
 trocando a paleta de cores pra id visual da unesp #0093DD
 http://www.carbonrider.com/2019/01/30/material-theme-with-angular-7-change-primary-and-accent-color/
