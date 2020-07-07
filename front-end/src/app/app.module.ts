@@ -16,6 +16,7 @@ import { SupervisorListComponent } from './supervisor/supervisor-list/supervisor
 import { ConfirmDlgComponent } from './ui/confirm-dlg/confirm-dlg.component';
 import { EstagiarioFormComponent } from './estagiario/estagiario-form/estagiario-form.component';
 import { FormsModule } from '@angular/forms';
+import { NgxMaskModule } from 'ngx-mask';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    NgxMaskModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

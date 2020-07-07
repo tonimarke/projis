@@ -2,6 +2,9 @@
 https://stackblitz.com/edit/angular-nested-mat-table?file=app%2Ftable-expandable-rows-example.ts
 
 
+ estagiario-form.component.html cola header form
+   #f="ngForm" (ngSubmit)="salvar(f)">
+
 
 # endereços embedados no usuario, schema no mongoose
 var enderecoSchema = new Schema({
@@ -212,6 +215,13 @@ front-end> ng g c ui/confirm-dlg
 
 ## aula 22 modulos de edicao 
    ng g c estagiario/estagiario-form
+
+   instala o pacote pra mascaras de input fields (front-end)
+   yarn add ngx-mask
+
+## aula 23 -- 
+   estudar observable / promise
+   43.
 
 trocando a paleta de cores pra id visual da unesp #0093DD
 http://www.carbonrider.com/2019/01/30/material-theme-with-angular-7-change-primary-and-accent-color/

@@ -15,4 +15,12 @@ export class EstagiarioService {
   excluir(id: string) {
     return this.http.request('DELETE', 'http://localhost:3000/estagiario', { body: {_id: id}}).toPromise()
   }
+
+  novo(estagiario: any) {
+    return this.http.post('http://localhost:3000/estagiario', estagiario).toPromise()
+  }
+
+  atualizar(body: any){
+    return this.http.put('http://localhost:3000/estagiario', body).toPromise()
+  }
 }
