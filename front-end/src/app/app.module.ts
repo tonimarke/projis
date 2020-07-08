@@ -17,6 +17,10 @@ import { ConfirmDlgComponent } from './ui/confirm-dlg/confirm-dlg.component';
 import { EstagiarioFormComponent } from './estagiario/estagiario-form/estagiario-form.component';
 import { FormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
+import { AcaoFormComponent } from './acao/acao-form/acao-form.component';
+import { PcontrariaFormComponent } from './pcontraria/pcontraria-form/pcontraria-form.component';
+import { SupervisorFormComponent } from './supervisor/supervisor-form/supervisor-form.component';
+import { UsuarioFormComponent } from './usuario/usuario-form/usuario-form.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { NgxMaskModule } from 'ngx-mask';
     PcontrariaListComponent,
     SupervisorListComponent,
     ConfirmDlgComponent,
-    EstagiarioFormComponent
+    EstagiarioFormComponent,
+    AcaoFormComponent,
+    PcontrariaFormComponent,
+    SupervisorFormComponent,
+    UsuarioFormComponent
   ],
   imports: [
     BrowserModule,

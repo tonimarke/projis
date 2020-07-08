@@ -1,0 +1,43 @@
+<h1>{{ titulo }}</h1>
+
+<!--  // [campos supervisor]   nome:, cpf:, rg:, profissao:  -->
+
+<form class="std-form" #f="ngForm" (ngSubmit)="salvar(f)">
+
+    <mat-form-field>
+        <mat-label>Nome</mat-label>
+        <input name="nome" matInput [(ngModel)]="supervisor.nome" required placeholder="Nome do estagiário">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>CPF</mat-label>
+        <input name="cpf" matInput [(ngModel)]="supervisor.cpf" required placeholder="CPF, apenas os números"
+            mask="000.000.000-00">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>RG</mat-label>
+        <input name="cpf" matInput [(ngModel)]="supervisor.rg" placeholder="RG">
+    </mat-form-field>
+
+    <!-- <mat-form-field>
+    <mat-label>e-mail</mat-label>
+    <mat-icon matPrefix>contact_mail</mat-icon>
+    <input type="email" name="email" matInput [(ngModel)]="supervisor.email"
+        required placeholder="Conta de email válida">
+    </mat-form-field> -->
+
+    <mat-form-field>
+        <mat-label>Profissão</mat-label>
+        <input name="profissao" matInput [(ngModel)]="supervisor.profissao" required
+            placeholder="Advogado ou Assistente Social">
+    </mat-form-field>
+
+    <mat-toolbar class="form-buttons">
+        <mat-toolbar-row>
+            <button mat-raised-button type="submit" color="accent">Salvar</button>
+            <button mat-raised-button type="button" (click)="voltar(f)">Voltar</button>
+        </mat-toolbar-row>
+    </mat-toolbar>
+
+</form>

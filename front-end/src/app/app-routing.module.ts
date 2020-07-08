@@ -1,3 +1,6 @@
+import { UsuarioFormComponent } from './usuario/usuario-form/usuario-form.component';
+import { PcontrariaFormComponent } from './pcontraria/pcontraria-form/pcontraria-form.component';
+import { SupervisorFormComponent } from './supervisor/supervisor-form/supervisor-form.component';
 import { EstagiarioFormComponent } from './estagiario/estagiario-form/estagiario-form.component';
 import { PcontrariaListComponent } from './pcontraria/pcontraria-list/pcontraria-list.component';
 import { EstagiarioListComponent } from './estagiario/estagiario-list/estagiario-list.component';
@@ -6,14 +9,23 @@ import { AcaoListComponent } from './acao/acao-list/acao-list.component';
 import { SupervisorListComponent } from './supervisor/supervisor-list/supervisor-list.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AcaoFormComponent } from './acao/acao-form/acao-form.component';
 
 const routes: Routes = [
   {
-    path: 'acao', // rotas dos ativos do projeto, começa sem a /
+    path: 'acao', // rotas dos ativos do projeto, começa sem a /  
     component: AcaoListComponent
   },
   {
-    path: 'estagiario',
+    path: 'acao/novo', // nova ação
+    component: AcaoFormComponent
+  },
+  {
+    path: 'acao/:id', // edita ação existente
+    component: AcaoFormComponent
+  },
+  {
+    path: 'estagiario', // listagem
     component: EstagiarioListComponent
   },
   {
@@ -25,16 +37,40 @@ const routes: Routes = [
     component: EstagiarioFormComponent
   },
   {
-    path: 'pcontraria',
+    path: 'pcontraria', // listagem
     component: PcontrariaListComponent
   },
   {
-    path: 'supervisor',
+    path: 'pcontraria/novo', // cadastra nova parte contrária
+    component: PcontrariaFormComponent
+  },
+  {
+    path: 'pcontraria/:id', // edita parte contrária existente
+    component: PcontrariaFormComponent
+  },
+  {
+    path: 'supervisor', // listagem
     component: SupervisorListComponent
   },
   {
-    path: 'usuario',
+    path: 'supervisor/novo', // novo supervisor
+    component: SupervisorFormComponent
+  },
+  {
+    path: 'supervisor/:id', // edita um supervisor existente
+    component: SupervisorFormComponent
+  },
+  {
+    path: 'usuario', // listagem
     component: UsuarioListComponent
+  },
+  {
+    path: 'usuario/novo', // cadastra novo usuário
+    component: UsuarioFormComponent
+  },
+  {
+    path: 'usuario/:id', // edita usuario existente
+    component: UsuarioFormComponent
   },
 ];
 

@@ -2,6 +2,11 @@
 https://stackblitz.com/edit/angular-nested-mat-table?file=app%2Ftable-expandable-rows-example.ts
 
 
+## parsers e webdrivers pra capturar os pdfs em outro site
+https://www.selenium.dev/documentation/en/webdriver/
+https://developers.google.com/web/tools/puppeteer/
+
+
  estagiario-form.component.html cola header form
    #f="ngForm" (ngSubmit)="salvar(f)">
 
@@ -215,6 +220,8 @@ front-end> ng g c ui/confirm-dlg
 
 ## aula 22 modulos de edicao 
    ng g c estagiario/estagiario-form
+      concats:
+   ng g c acao/acao-form && ng g c pcontraria/pcontraria-form && ng g c supervisor/supervisor-form && ng g c usuario/usuario-form
 
    instala o pacote pra mascaras de input fields (front-end)
    yarn add ngx-mask
