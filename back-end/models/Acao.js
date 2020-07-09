@@ -34,7 +34,7 @@ const AcaoSchema = mongoose.Schema({
    }
 })
 
-/*
+/* ['nomeAcao', 'tipoacao', 'usuario', 'pcontraria', 'data_atendimento', 'supervisor', 'estagiario', 'providencias']
    Parâmetros de mongoose.model():
    1º -> o nome do modelo (entidade)
    2º -> a descrição da estrutura (esquema) da entidade

@@ -7,37 +7,38 @@ const PcontrariaSchema = mongoose.Schema({
    cpf: {
       type: String,
       required: true,
-      index: { 
+      index: {
          unique: true // Não deixa repetir CPF no cadastro
       }
    },
    rg: {
       type: String
    },
-   enderecos:{ 
+   enderecos: {
       type: Array,
-      itens:{
-            logradouro: String,
-            numero: Number,
-            bairro: String,
-            complemento: String,
-            cep: String,
-            cidade: String,
-            estado: String
-            }
+      itens: {
+         logradouro: String,
+         numero: Number,
+         bairro: String,
+         complemento: String,
+         cep: String,
+         cidade: String,
+         estado: String
+      }
    },
-   telefones:{ 
+   telefones: {
       type: Array,
-      itens:{
-            numero: String,
-            tipo: String
-            }
+      itens: {
+         numero: String,
+         tipo: String
+      }
    },
    ocupacao: {
       type: String
    }
 });
-/*
+
+/* ['nome','cpf','rg','enderecos','telefones','ocupacao']
    Parâmetros de mongoose.model():
    1º -> o nome do modelo (entidade)
    2º -> a descrição da estrutura (esquema) da entidade

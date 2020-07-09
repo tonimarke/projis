@@ -25,7 +25,18 @@ export class EstagiarioFormComponent implements OnInit {
     private dialog: MatDialog
   ) { }
 
-  ngOnInit(): void {
+  async ngOnInit() {
+
+    let params = this.actRoute.snapshot.params;
+
+    if (params['id']) {
+      try {
+        this.estagiario = await this.estagiarioSrv.obterUm(params['id'])
+      }
+      catch (erro) {
+        this.snackBar.open(erro.message, 'Que pena!', { duration: 5000 })
+      }
+    }
   }
 
   async salvar(form: NgForm) {
@@ -41,23 +52,23 @@ export class EstagiarioFormComponent implements OnInit {
           await this.estagiarioSrv.novo(this.estagiario)
           msg = 'Novo estagiário criado com sucesso'
         }
-        this.snackBar.open(msg, 'Entendi', {duration: 5000})
+        this.snackBar.open(msg, 'Entendi', { duration: 5000 })
         // retorna pra pagina de listagem
         this.router.navigate(['/estagiario'])
       }
       catch (erro) {
-        this.snackBar.open(erro.message, 'Falhou :(', {duration: 5000})
+        this.snackBar.open(erro.message, 'Falhou :(', { duration: 5000 })
       }
     }
   }
 
   async voltar(form: NgForm) {
-    
+
     let result = true;
     console.log(form);
     // form.dirty = formulário "sujo", não salvo (via código)
     // form.touched = o conteúdo de algum campo foi alterado (via usuário)
-    if(form.dirty && form.touched) {
+    if (form.dirty && form.touched) {
       let dialogRef = this.dialog.open(ConfirmDlgComponent, {
         width: '50%',
         data: { question: 'Há dados não salvos. Deseja realmente voltar?' }
@@ -67,7 +78,7 @@ export class EstagiarioFormComponent implements OnInit {
 
     }
 
-    if(result) {
+    if (result) {
       this.router.navigate(['/estagiario']); // Retorna à listagem
     }
 

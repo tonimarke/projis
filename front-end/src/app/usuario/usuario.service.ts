@@ -9,7 +9,7 @@ export class UsuarioService {
 
   constructor(private http: HttpClient) { }
 
-  private apiUrl: string = env.apiBaseUri + '/supervisor'
+  private apiUrl: string = env.apiBaseUri + '/usuario'
 
   listar() {
     return this.http.get(this.apiUrl).toPromise()

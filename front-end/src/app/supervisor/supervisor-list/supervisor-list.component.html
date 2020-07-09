@@ -31,8 +31,8 @@
     <td mat-cell *matCellDef="let supervisor"> {{supervisor.profissao}} </td>
   </ng-container>
 
-   <!-- coluna do botão editar -->
-   <ng-container matColumnDef="editar">
+  <!-- coluna do botão editar -->
+  <ng-container matColumnDef="editar">
     <th mat-header-cell *matHeaderCellDef> Editar </th>
     <td mat-cell *matCellDef="let supervisor">
       <a mat-raised-button color="accent" title="Editar Supervisor" [routerLink]="['/supervisor', supervisor._id]">

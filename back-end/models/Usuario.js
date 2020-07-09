@@ -9,32 +9,32 @@ const UsuarioSchema = mongoose.Schema({
    cpf: {
       type: String,
       required: true,
-      index: { 
+      index: {
          unique: true // Não deixa repetir CPF no cadastro
       }
    },
    rg: String,
-   enderecos:{ 
+   enderecos: {
       type: Array,
-      itens:{
-            logradouro: String,
-            numero: Number,
-            bairro: String,
-            complemento: String,
-            cep: String,
-            cidade: String,
-            estado: String
-            }
+      itens: {
+         logradouro: String,
+         numero: Number,
+         bairro: String,
+         complemento: String,
+         cep: String,
+         cidade: String,
+         estado: String
+      }
    },
-   telefones:{ 
+   telefones: {
       type: Array,
-      itens:{
-            numero: String,
-            tipo: String
-            }
+      itens: {
+         numero: String,
+         tipo: String
+      }
    },
    data_nascimento: Date,
-   registrado_por:{
+   registrado_por: {
       type: mongoose.ObjectId,
       ref: 'Estagiario', // Nome do model referenciado
       required: true
@@ -42,7 +42,7 @@ const UsuarioSchema = mongoose.Schema({
 })
 
 
-/*
+/* ['nome', 'cpf', 'rg', 'enderecos', 'telefones', 'data_nascimento', 'registrado_por']
    Parâmetros de mongoose.model():
    1º -> o nome do modelo (entidade)
    2º -> a descrição da estrutura (esquema) da entidade
