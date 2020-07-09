@@ -1,9 +1,7 @@
 const mongoose = require('mongoose')
 
 const SupervisorSchema = mongoose.Schema({
-   nome: {
-      type: String
-   },
+   nome: String,
    cpf: {
       type: String,
       required: true,
@@ -11,13 +9,8 @@ const SupervisorSchema = mongoose.Schema({
          unique: true // Não deixa repetir CPF no cadastro
       }
    },
-   rg: {
-      type: String
-   },
-   profissao: {
-      type: String
-   },
-      
+   email: String,
+   profissao: String,      
 });
 /*
    Parâmetros de mongoose.model():
