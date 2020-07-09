@@ -25,7 +25,26 @@ export class SupervisorFormComponent implements OnInit {
     private dialog: MatDialog
   ) { }
 
-  ngOnInit(): void {
+  async ngOnInit() {
+    // capturando parametros se vieram na rota de origem pro formulário
+    let params = this.actRoute.snapshot.params;
+
+    // se veio com parametro :id
+    if (params['id']) {
+      // então é atualização, precisa chamar o obterUm() do service pra buscar o registro
+      try {
+        this.supervisor = await this.supervisorSrv.obterUm(params['id'])
+      }
+      catch (erro) {
+        this.snackBar.open(erro.message, 'Que pena!', { duration: 5000 })
+      }
+    }
+    // plotando o conteudo volátil
+    // this.supervisores = await this.servidorSrv.listar()
+    // console.log(this.servidores)
+    //plotando se usar o FormGroup: 
+    //supervisorform: FormGroup;
+    //this.nomedoForm.valueChanges.subscribe(console.log)
   }
 
   async salvar(form: NgForm) {
@@ -41,23 +60,23 @@ export class SupervisorFormComponent implements OnInit {
           await this.supervisorSrv.novo(this.supervisor)
           msg = 'Novo supervisor criado com sucesso'
         }
-        this.snackBar.open(msg, 'Entendi', {duration: 5000})
+        this.snackBar.open(msg, 'Entendi', { duration: 5000 })
         // retorna pra pagina de listagem
         this.router.navigate(['/supervisor'])
       }
       catch (erro) {
-        this.snackBar.open(erro.message, 'Falhou :(', {duration: 5000})
+        this.snackBar.open(erro.message, 'Falhou :(', { duration: 5000 })
       }
     }
   }
 
   async voltar(form: NgForm) {
-    
+
     let result = true;
     console.log(form);
     // form.dirty = formulário "sujo", não salvo (via código)
     // form.touched = o conteúdo de algum campo foi alterado (via usuário)
-    if(form.dirty && form.touched) {
+    if (form.dirty && form.touched) {
       let dialogRef = this.dialog.open(ConfirmDlgComponent, {
         width: '50%',
         data: { question: 'Há dados não salvos. Deseja realmente voltar?' }
@@ -67,7 +86,7 @@ export class SupervisorFormComponent implements OnInit {
 
     }
 
-    if(result) {
+    if (result) {
       this.router.navigate(['/supervisor']); // Retorna à listagem
     }
 

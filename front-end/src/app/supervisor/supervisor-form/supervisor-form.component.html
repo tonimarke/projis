@@ -1,6 +1,6 @@
 <h1>{{ titulo }}</h1>
-
-<!--  // [campos supervisor]   nome:, cpf:, rg:, profissao:  -->
+    <!-- Value: {{ supervisorForm.value | json }} 
+    [campos supervisor]   nome:, cpf:, email:, profissao:  -->
 
 <form class="std-form" #f="ngForm" (ngSubmit)="salvar(f)">
 
@@ -16,21 +16,14 @@
     </mat-form-field>
 
     <mat-form-field>
-        <mat-label>RG</mat-label>
-        <input name="cpf" matInput [(ngModel)]="supervisor.rg" placeholder="RG">
+        <mat-label>e-mail</mat-label>
+        <mat-icon matPrefix>contact_mail</mat-icon>
+        <input type="email" name="email" matInput [(ngModel)]="supervisor.email" required placeholder="Email válido">
     </mat-form-field>
-
-    <!-- <mat-form-field>
-    <mat-label>e-mail</mat-label>
-    <mat-icon matPrefix>contact_mail</mat-icon>
-    <input type="email" name="email" matInput [(ngModel)]="supervisor.email"
-        required placeholder="Conta de email válida">
-    </mat-form-field> -->
 
     <mat-form-field>
         <mat-label>Profissão</mat-label>
-        <input name="profissao" matInput [(ngModel)]="supervisor.profissao" required
-            placeholder="Advogado ou Assistente Social">
+        <input name="profissao" matInput [(ngModel)]="supervisor.profissao" placeholder="Advogado ou Assistente Social">
     </mat-form-field>
 
     <mat-toolbar class="form-buttons">

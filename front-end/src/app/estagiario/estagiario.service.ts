@@ -12,26 +12,26 @@ export class EstagiarioService {
   // precisa criar intanciar manualmente as dependencias (auto-import)
   constructor(private http: HttpClient) { }
 
-  private apiUri: string = env.apiBaseUri + '/estagiario'
+  private apiUrl: string = env.apiBaseUri + '/estagiario'
 
   listar() {
-    return this.http.get(this.apiUri).toPromise()
+    return this.http.get(this.apiUrl).toPromise()
   }
 
   excluir(id: string) {
-    return this.http.request('DELETE', this.apiUri, { body: { _id: id } }).toPromise()
+    return this.http.request('DELETE', this.apiUrl, { body: { _id: id } }).toPromise()
   }
 
   novo(body: any) {
-    return this.http.post(this.apiUri, body).toPromise()
+    return this.http.post(this.apiUrl, body).toPromise()
   }
 
   atualizar(body: any) {
-    return this.http.put(this.apiUri, body).toPromise()
+    return this.http.put(this.apiUrl, body).toPromise()
   }
 
   obterUm(id: string) {
-    return this.http.get(this.apiUri + '/' + id).toPromise()
+    return this.http.get(this.apiUrl + '/' + id).toPromise()
   }
 
 }

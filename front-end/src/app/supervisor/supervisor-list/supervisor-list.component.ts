@@ -13,7 +13,7 @@ import { ConfirmDlgComponent } from 'src/app/ui/confirm-dlg/confirm-dlg.componen
 export class SupervisorListComponent implements OnInit {
 
   supervisores: any = []
-  displayedColumns: any = ['nome', 'cpf', 'email', 'profissao']
+  displayedColumns: any = ['nome', 'cpf', 'email', 'profissao', 'editar', 'excluir']
     // [campos supervisor]   nome:, cpf:, email:, profissao:
 
   constructor(

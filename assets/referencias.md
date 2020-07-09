@@ -228,7 +228,10 @@ front-end> ng g c ui/confirm-dlg
 
 ## aula 23 -- 
    estudar observable / promise
-   43.
+   43. resumao de criações:
+         ng g s entidade/entidade
+         ng g c entidade/entidade-list
+         ng g c entidade/entidade-form
 
 trocando a paleta de cores pra id visual da unesp #0093DD
 http://www.carbonrider.com/2019/01/30/material-theme-with-angular-7-change-primary-and-accent-color/
