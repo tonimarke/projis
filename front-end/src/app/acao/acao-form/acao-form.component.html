@@ -1,1 +1,56 @@
-<p>acao-form works!</p>
+<h1>{{ titulo }}</h1>
+<!-- ['nomeAcao', 'tipoacao', 'usuario', 'pcontraria', 'data_atendimento', 'supervisor', 'estagiario', 'providencias']  -->
+
+<form class="std-form" #f="ngForm" (ngSubmit)="salvar(f)">
+
+    <mat-form-field>
+        <mat-label>Nome da Ação</mat-label>
+        <input name="nomeAcao" matInput [(ngModel)]="acao.nomeAcao" required placeholder="Nome da Ação">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Tipo</mat-label>
+        <input name="tipoacao" matInput [(ngModel)]="acao.tipoacao" required placeholder="Selecione o tipo da ação">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Usuário</mat-label>
+        <mat-icon matPrefix>contact_mail</mat-icon>
+        <input name="usuario" matInput [(ngModel)]="acao.usuario" required placeholder="Usuário da ação">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Parte Contrária</mat-label>
+        <input name="pcontraria" matInput [(ngModel)]="acao.pcontraria" placeholder="Parte Contrária">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Atendimento</mat-label>
+        <input type="date" name="data_atendimento" matInput [(ngModel)]="acao.data_atendimento" required
+            placeholder="Data do Atendimento">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Supervisor</mat-label>
+        <input name="supervisor" matInput [(ngModel)]="acao.supervisor.nome" placeholder="Supervisor do Processo">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Estagiário</mat-label>
+        <input name="estagiario" matInput [(ngModel)]="acao.estagiario.nome" placeholder="Estagiário em acompanhamento">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Providências</mat-label>
+        <textarea name="providencias" matInput [(ngModel)]="acao.providencias" required
+            placeholder="Procidencias Tomadas" rows="5"></textarea>
+    </mat-form-field>
+
+    <mat-toolbar class="form-buttons">
+        <mat-toolbar-row>
+            <button mat-raised-button type="submit" color="accent">Salvar</button>
+            <button mat-raised-button type="button" (click)="voltar(f)">Voltar</button>
+        </mat-toolbar-row>
+    </mat-toolbar>
+
+</form>

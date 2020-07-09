@@ -9,14 +9,14 @@ export class PcontrariaService {
 
   constructor(private http: HttpClient) { }
 
-  private apiUrl : string = env.apiBaseUri + '/pcontraria'
+  private apiUrl: string = env.apiBaseUri + '/pcontraria'
 
-  listar(){
+  listar() {
     return this.http.get(this.apiUrl).toPromise()
   }
 
   excluir(id: string) {
-    return this.http.request('DELETE', this.apiUrl, {body: {_id: id}}).toPromise()
+    return this.http.request('DELETE', this.apiUrl, { body: { _id: id } }).toPromise()
   }
 
   novo(body: any) {
