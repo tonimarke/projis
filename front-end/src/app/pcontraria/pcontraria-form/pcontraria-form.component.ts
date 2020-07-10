@@ -13,7 +13,7 @@ import { ConfirmDlgComponent } from 'src/app/ui/confirm-dlg/confirm-dlg.componen
 })
 export class PcontrariaFormComponent implements OnInit {
 
-  titulo: string = 'Novo Pcontraria'
+  titulo: string = 'Nova Parte Contrária'
 
   pcontraria: any = {} // objeto vazio
 

@@ -13,7 +13,7 @@ import { ConfirmDlgComponent } from 'src/app/ui/confirm-dlg/confirm-dlg.componen
 })
 export class AcaoFormComponent implements OnInit {
 
-  titulo: string = 'Novo Acao'
+  titulo: string = 'Nova Ação'
 
   acao: any = {} // objeto vazio
 
