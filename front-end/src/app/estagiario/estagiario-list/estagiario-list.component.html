@@ -39,12 +39,12 @@
 
   <ng-container matColumnDef="inicio_vinculo">
     <th mat-header-cell *matHeaderCellDef> Início Vínculo </th>
-    <td mat-cell *matCellDef="let estagiario"> {{estagiario.inicio_vinculo | date}} </td>
+    <td mat-cell *matCellDef="let estagiario"> {{estagiario.inicio_vinculo | date:'dd/MM/yyyy'}} </td>
   </ng-container>
 
   <ng-container matColumnDef="fim_vinculo">
     <th mat-header-cell *matHeaderCellDef> Final </th>
-    <td mat-cell *matCellDef="let estagiario"> {{estagiario.fim_vinculo | date}} </td>
+    <td mat-cell *matCellDef="let estagiario"> {{estagiario.fim_vinculo | date:'dd/MM/yyyy'}} </td>
   </ng-container>
 
    <!-- coluna do botão editar -->

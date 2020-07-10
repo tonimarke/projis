@@ -233,6 +233,10 @@ front-end> ng g c ui/confirm-dlg
          ng g c entidade/entidade-list
          ng g c entidade/entidade-form
 
+## aula 24
+min 45 objetos e relacoes 
+
+
 trocando a paleta de cores pra id visual da unesp #0093DD
 http://www.carbonrider.com/2019/01/30/material-theme-with-angular-7-change-primary-and-accent-color/
 http://mcg.mbitson.com
