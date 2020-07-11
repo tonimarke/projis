@@ -1,206 +1,203 @@
-cola ids stags
-"_id": "5efe3f7b5d647c4bf82a91bb",
-"nome": "Leticia Cardoso Madeira",
+[cola ids stags "_id": "5efe3f7b5d647c4bf82a91bb",
+    "nome": "Leticia Cardoso Madeira",
 
-"_id": "5efe3b225d647c4bf82a91ba",
-"nome": "José da Silva",
+    "_id": "5efe3b225d647c4bf82a91ba",
+    "nome": "José da Silva",
 
-"_id": "5ef954dda1b2657a07f079c1",
-"nome": "Maria Joaquina",
+    "_id": "5ef954dda1b2657a07f079c1",
+    "nome": "Maria Joaquina",
 
-cola ids supervisores
-"_id": "5efe47e077d2cf4c51acd8ce",
-"nome": "Eliana Siqueira",
+    cola ids supervisores "_id": "5efe47e077d2cf4c51acd8ce",
+    "nome": "Eliana Siqueira",
 
-"_id": "5efe485d77d2cf4c51acd8cf",
-"nome": "Silvia Bernadete",
+    "_id": "5efe485d77d2cf4c51acd8cf",
+    "nome": "Silvia Bernadete",
 
-"_id": "5efe485d77d2cf4c51acd8d0",
-"nome": "Luciana Soarez",
+    "_id": "5efe485d77d2cf4c51acd8d0",
+    "nome": "Luciana Soarez",
 
-colas ids usuarios
-"_id": "5efe44135d647c4bf82a91bf",
-"nome": "Enzo Fransérgio Gianechini",
+    colas ids usuarios "_id": "5efe44135d647c4bf82a91bf",
+    "nome": "Enzo Fransérgio Gianechini",
 
-"_id": "5efe3b225d647c4bf82a91ba",
-"nome": "José da Silva",
+    "_id": "5efe3b225d647c4bf82a91ba",
+    "nome": "José da Silva",
 
-"_id": "5efe425f5d647c4bf82a91be",
-"nome": "Maria das Cruzes",
+    "_id": "5efe425f5d647c4bf82a91be",
+    "nome": "Maria das Cruzes",
 
-colas ids pcontrarias
-"_id": "5efe4ca877d2cf4c51acd8d1",
-"nome": "Zeca Urubu",
+    colas ids pcontrarias "_id": "5efe4ca877d2cf4c51acd8d1",
+    "nome": "Zeca Urubu",
 
-"_id": "5efe4e6677d2cf4c51acd8d2",
-"nome": "Joaquim Nicodemus",
-
-[
+    "_id": "5efe4e6677d2cf4c51acd8d2",
+    "nome": "Joaquim Nicodemus",
+],
+[{
+        "nomeAcao": "Despejo José",
+        "tipoacao": "Ação de Despejo",
+        "usuario": "5efe41685d647c4bf82a91bd",
+        "pcontraria": "5efe4ca877d2cf4c51acd8d1",
+        "data_atendimento": "2019-10-05T15:00:00.000Z",
+        "supervisor": "5efe47e077d2cf4c51acd8ce",
+        "estagiario": "5ef954dda1b2657a07f079c1",
+        "providencias": "Coleta de documentação e contato com envolvidos"
+    },
     {
-    "nomeAcao": "Despejo José",
-    "tipoacao": "Ação de Despejo",
-    "usuario": "5efe3b225d647c4bf82a91ba",
-    "pcontraria": "5efe4ca877d2cf4c51acd8d1",
-    "data_atendimento" : "2019-10-05T15:00:00.000Z",
-    "supervisor": "5efe47e077d2cf4c51acd8ce",
-    "estagiario": "5ef954dda1b2657a07f079c1",
-    "providencias": "Coleta de documentação e contato com envolvidos"
- },
- {
-    "nomeAcao": "Solicitação de Pensão",
-    "tipoacao": "Pensão Alimentícia",
-    "usuario": "5efe425f5d647c4bf82a91be",
-    "pcontraria": "5efe4e6677d2cf4c51acd8d2",
-    "data_atendimento" : "2019-03-15T15:00:00.000Z",
-    "supervisor": "5efe485d77d2cf4c51acd8d0",
-    "estagiario": "5efe3f7b5d647c4bf82a91bb",
-    "providencias": "Coleta de documentação e entrevistas"
- }
+        "nomeAcao": "Solicitação de Pensão",
+        "tipoacao": "Pensão Alimentícia",
+        "usuario": "5efe425f5d647c4bf82a91be",
+        "pcontraria": "5efe4e6677d2cf4c51acd8d2",
+        "data_atendimento": "2019-03-15T15:00:00.000Z",
+        "supervisor": "5efe485d77d2cf4c51acd8d0",
+        "estagiario": "5efe3f7b5d647c4bf82a91bb"
+        "providencias": "Coleta de documentação e entrevistas"
+    }
 ]
 
 
-
-
-### query mongo
-db.acoes.findOne()
-
-[
-    {
-        "_id": "5efe55f477d2cf4c51acd8d5",
+.acoes.findOne() {
+        "_id": ObjectId("5efe7afd689aa75181455330"),
         "nomeAcao": "Despejo José",
         "tipoacao": "Ação de Despejo",
-        "usuario": null,
-        "pcontraria": {
-            "enderecos": [
-                {
-                    "logradouro": "Avenida XIII",
-                    "numero": "8022",
-                    "bairro": "Vila Seixas",
-                    "complemento": "Parque Industrial",
-                    "cep": "14003-274",
-                    "cidade": "Franca",
-                    "estado": "SP"
-                },
-                {
-                    "logradouro": "Rua Campos Salles",
-                    "numero": "67",
-                    "bairro": "Campos Elíseos",
-                    "cep": "14054-500",
-                    "cidade": "Batatais",
-                    "estado": "SP"
-                }
-            ],
-            "telefones": [
-                {
-                    "numero": "(16)99956-1311",
-                    "tipo": "Celular"
-                },
-                {
-                    "numero": "(16)3702-1233",
-                    "tipo": "Fixo"
-                }
-            ],
-            "_id": "5efe4ca877d2cf4c51acd8d1",
-            "nome": "Zeca Urubu",
-            "cpf": "015.184.485-22",
-            "rg": "8541558-77",
-            "ocupacao": "Pedreiro",
-            "__v": 0
-        },
-        "data_atendimento": "2019-10-05T15:00:00.000Z",
-        "supervisor": {
-            "_id": "5efe47e077d2cf4c51acd8ce",
-            "nome": "Eliana Siqueira",
-            "cpf": "854.486.854-77",
-            "rg": "215-485-77",
-            "profissao": "Advogado",
-            "__v": 0
-        },
-        "estagiario": null,
+        "usuario": ObjectId("5efe41685d647c4bf82a91bd"),
+        "pcontraria": ObjectId("5efe4ca877d2cf4c51acd8d1"),
+        "data_atendimento": ISODate("2019-03-01T00:00:00Z"),
+        "supervisor": ObjectId("5efe47e077d2cf4c51acd8ce"),
+        "estagiario": ObjectId("5ef954dda1b2657a07f079c1"),
         "providencias": "Coleta de documentação e contato com envolvidos",
         "__v": 0
-    },
-    {
-        "_id": "5efe55f477d2cf4c51acd8d6",
-        "nomeAcao": "Solicitação de Pensão",
-        "tipoacao": "Pensão Alimentícia",
-        "usuario": {
-            "enderecos": [
-                {
+
+
+
+        ### query mongo
+        db.acoes.findOne()
+
+        [{
+            "_id": "5efe55f477d2cf4c51acd8d5",
+            "nomeAcao": "Despejo José",
+            "tipoacao": "Ação de Despejo",
+            "usuario": null,
+            "pcontraria": {
+                "enderecos": [{
+                        "logradouro": "Avenida XIII",
+                        "numero": "8022",
+                        "bairro": "Vila Seixas",
+                        "complemento": "Parque Industrial",
+                        "cep": "14003-274",
+                        "cidade": "Franca",
+                        "estado": "SP"
+                    },
+                    {
+                        "logradouro": "Rua Campos Salles",
+                        "numero": "67",
+                        "bairro": "Campos Elíseos",
+                        "cep": "14054-500",
+                        "cidade": "Batatais",
+                        "estado": "SP"
+                    }
+                ],
+                "telefones": [{
+                        "numero": "(16)99956-1311",
+                        "tipo": "Celular"
+                    },
+                    {
+                        "numero": "(16)3702-1233",
+                        "tipo": "Fixo"
+                    }
+                ],
+                "_id": "5efe4ca877d2cf4c51acd8d1",
+                "nome": "Zeca Urubu",
+                "cpf": "015.184.485-22",
+                "rg": "8541558-77",
+                "ocupacao": "Pedreiro",
+                "__v": 0
+            },
+            "data_atendimento": "2019-10-05T15:00:00.000Z",
+            "supervisor": {
+                "_id": "5efe47e077d2cf4c51acd8ce",
+                "nome": "Eliana Siqueira",
+                "cpf": "854.486.854-77",
+                "rg": "215-485-77",
+                "profissao": "Advogado",
+                "__v": 0
+            },
+            "estagiario": null,
+            "providencias": "Coleta de documentação e contato com envolvidos",
+            "__v": 0
+        }, {
+            "_id": "5efe55f477d2cf4c51acd8d6",
+            "nomeAcao": "Solicitação de Pensão",
+            "tipoacao": "Pensão Alimentícia",
+            "usuario": {
+                "enderecos": [{
                     "logradouro": "Rua Salvador",
                     "numero": "215",
                     "bairro": "Jardim Brasilândia",
                     "cep": "14658-864",
                     "cidade": "Franca",
                     "estado": "SP"
-                }
-            ],
-            "telefones": [
-                {
-                    "numero": "(16)99854-2342",
-                    "tipo": "Celular"
-                },
-                {
-                    "numero": "(16)3706-4852",
-                    "tipo": "Fixo"
-                }
-            ],
-            "_id": "5efe425f5d647c4bf82a91be",
-            "nome": "Maria das Cruzes",
-            "cpf": "883.555.111-44",
-            "rg": "222.464-37",
-            "data_nascimento": "1971-05-19T03:00:00.000Z",
-            "registrado_por": "5efe3b225d647c4bf82a91ba",
+                }],
+                "telefones": [{
+                        "numero": "(16)99854-2342",
+                        "tipo": "Celular"
+                    },
+                    {
+                        "numero": "(16)3706-4852",
+                        "tipo": "Fixo"
+                    }
+                ],
+                "_id": "5efe425f5d647c4bf82a91be",
+                "nome": "Maria das Cruzes",
+                "cpf": "883.555.111-44",
+                "rg": "222.464-37",
+                "data_nascimento": "1971-05-19T03:00:00.000Z",
+                "registrado_por": "5efe3b225d647c4bf82a91ba",
+                "__v": 0
+            },
+            "pcontraria": {
+                "enderecos": [{
+                        "logradouro": "Rua Almirante Abrão",
+                        "numero": "22",
+                        "bairro": "Parque Progresso",
+                        "complemento": "Condomínio dos Ssapateiros",
+                        "cep": "14003-274",
+                        "cidade": "Franca",
+                        "estado": "SP"
+                    },
+                    {
+                        "logradouro": "Rua Borba Gato",
+                        "numero": "167",
+                        "bairro": "Cruzeiro",
+                        "cep": "13054-500",
+                        "cidade": "Belo Horizonte",
+                        "estado": "MG"
+                    }
+                ],
+                "telefones": [{
+                        "numero": "(31)97418-1331",
+                        "tipo": "Celular"
+                    },
+                    {
+                        "numero": "(16)3702-1287",
+                        "tipo": "Fixo"
+                    }
+                ],
+                "_id": "5efe4e6677d2cf4c51acd8d2",
+                "nome": "Joaquim Nicodemus",
+                "cpf": "185.124.485-31",
+                "rg": "884558-77",
+                "ocupacao": "Vendedor",
+                "__v": 0
+            },
+            "data_atendimento": "2019-03-15T15:00:00.000Z",
+            "supervisor": {
+                "_id": "5efe485d77d2cf4c51acd8d0",
+                "nome": "Luciana Soarez",
+                "cpf": "174.486.854-71",
+                "rg": "725-125-72",
+                "profissao": "Assistente Social",
+                "__v": 0
+            },
+            "estagiario": null,
+            "providencias": "Coleta de documentação e entrevistas",
             "__v": 0
-        },
-        "pcontraria": {
-            "enderecos": [
-                {
-                    "logradouro": "Rua Almirante Abrão",
-                    "numero": "22",
-                    "bairro": "Parque Progresso",
-                    "complemento": "Condomínio dos Ssapateiros",
-                    "cep": "14003-274",
-                    "cidade": "Franca",
-                    "estado": "SP"
-                },
-                {
-                    "logradouro": "Rua Borba Gato",
-                    "numero": "167",
-                    "bairro": "Cruzeiro",
-                    "cep": "13054-500",
-                    "cidade": "Belo Horizonte",
-                    "estado": "MG"
-                }
-            ],
-            "telefones": [
-                {
-                    "numero": "(31)97418-1331",
-                    "tipo": "Celular"
-                },
-                {
-                    "numero": "(16)3702-1287",
-                    "tipo": "Fixo"
-                }
-            ],
-            "_id": "5efe4e6677d2cf4c51acd8d2",
-            "nome": "Joaquim Nicodemus",
-            "cpf": "185.124.485-31",
-            "rg": "884558-77",
-            "ocupacao": "Vendedor",
-            "__v": 0
-        },
-        "data_atendimento": "2019-03-15T15:00:00.000Z",
-        "supervisor": {
-            "_id": "5efe485d77d2cf4c51acd8d0",
-            "nome": "Luciana Soarez",
-            "cpf": "174.486.854-71",
-            "rg": "725-125-72",
-            "profissao": "Assistente Social",
-            "__v": 0
-        },
-        "estagiario": null,
-        "providencias": "Coleta de documentação e entrevistas",
-        "__v": 0
-    }
-]
+        }]

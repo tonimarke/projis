@@ -13,6 +13,11 @@
           The actual rendered columns are set as a property on the row definition" 
         ['nomeAcao', 'tipoacao', 'usuario', 'pcontraria', 'data_atendimento', 'supervisor', 'estagiario', 'providencias']-->
 
+  <ng-container matColumnDef="num_acao">
+    <th mat-header-cell *matHeaderCellDef> Número </th>
+    <td mat-cell *matCellDef="let acao"> {{acao.num_acao}} </td>
+  </ng-container>
+
   <ng-container matColumnDef="nomeAcao">
     <th mat-header-cell *matHeaderCellDef> Ação </th>
     <td mat-cell *matCellDef="let acao"> {{acao.nomeAcao}} </td>

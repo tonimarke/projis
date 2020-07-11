@@ -4,6 +4,11 @@
 <form class="std-form" #f="ngForm" (ngSubmit)="salvar(f)">
 
     <mat-form-field>
+        <mat-label>Nº Ação</mat-label>
+        <input name="num_acao" matInput [(ngModel)]="acao.num_acao" readonly>
+     </mat-form-field>
+
+    <mat-form-field>
         <mat-label>Nome da Ação</mat-label>
         <input name="nomeAcao" matInput [(ngModel)]="acao.nomeAcao" required placeholder="Nome da Ação">
     </mat-form-field>

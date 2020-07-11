@@ -20,14 +20,14 @@
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="667.8209375000001" width="607.5" x="-33.0" y="-36.4609375"/>
+              <y:Geometry height="680.5971875" width="607.5" x="-33.0" y="-36.4609375"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
               <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.4609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="607.5" x="0.0" xml:space="preserve" y="0.0">Diagrama de Entidade Relacionamento - Projis (MVP)</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-              <y:BorderInsets bottom="0" bottomF="0.0" left="33" leftF="33.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+              <y:BorderInsets bottom="13" bottomF="12.77624999999989" left="33" leftF="33.0" right="0" rightF="0.0" top="0" topF="0.0"/>
             </y:GroupNode>
             <y:GroupNode>
               <y:Geometry height="50.0" width="50.0" x="0.0" y="60.0"/>
@@ -153,11 +153,12 @@ ocupação<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelP
         <node id="n0::n5">
           <data key="d6">
             <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-              <y:Geometry height="160.88" width="129.0" x="430.5" y="455.4800000000001"/>
+              <y:Geometry height="176.88" width="124.0" x="435.5" y="439.4800000000001"/>
               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="32.646484375" x="48.1767578125" xml:space="preserve" y="4.0">acao</y:NodeLabel>
-              <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="129.71875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="113.751953125" x="2.0" xml:space="preserve" y="29.968749999999943">acao_Id
+              <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="32.646484375" x="45.6767578125" xml:space="preserve" y="4.0">acao</y:NodeLabel>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="143.6875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="113.751953125" x="2.0" xml:space="preserve" y="29.968749999999943">acao_Id
+num_acao
 nomeAcao
 tipoacao
 usuario_Id
@@ -193,7 +194,7 @@ tipo<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParamet
     <edge id="n0::e0" source="n0::n2" target="n0::n5">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="-59.0" sy="-0.0" tx="0.5" ty="53.0">
+          <y:Path sx="-59.0" sy="-0.0" tx="0.4806201550387641" ty="58.271009448035784">
             <y:Point x="0.0" y="100.92000000000007"/>
             <y:Point x="0.0" y="588.9200000000001"/>
           </y:Path>
@@ -206,7 +207,7 @@ tipo<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParamet
     <edge id="n0::e1" source="n0::n3" target="n0::n5">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="-11.5" sy="44.57999999999993" tx="35.5" ty="-28.920000000000073"/>
+          <y:Path sx="-11.5" sy="44.57999999999993" tx="34.5" ty="-20.920000000000073"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="crows_foot_one_mandatory" target="crows_foot_many_optional"/>
           <y:BendStyle smoothed="false"/>
@@ -226,7 +227,7 @@ tipo<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParamet
     <edge id="n0::e3" source="n0::n0" target="n0::n5">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="31.5" sy="-33.92000000000007" tx="0.0" ty="-80.44">
+          <y:Path sx="31.5" sy="-33.92000000000007" tx="0.0" ty="-88.44">
             <y:Point x="495.0" y="67.0"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
@@ -238,7 +239,7 @@ tipo<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParamet
     <edge id="n0::e4" source="n0::n4" target="n0::n5">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="36.5" sy="47.07999999999993" tx="-33.5" ty="10.579999999999927"/>
+          <y:Path sx="36.5" sy="47.07999999999993" tx="-11.5" ty="18.579999999999927"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="crows_foot_one_mandatory" target="crows_foot_one_mandatory"/>
           <y:BendStyle smoothed="false"/>
