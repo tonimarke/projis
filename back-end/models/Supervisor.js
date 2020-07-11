@@ -10,7 +10,13 @@ const SupervisorSchema = mongoose.Schema({
       }
    },
    email: String,
-   profissao: String,      
+   profissao: {
+      type: String,
+      // ADV = Advogado
+      // ASS = Assistente Social
+      enum: ['ADV', 'ASS'],
+      required: true
+   },
 });
 /*
    Parâmetros de mongoose.model():

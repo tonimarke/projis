@@ -1,5 +1,5 @@
 <h1>{{ titulo }}</h1>
-    <!-- Value: {{ supervisorForm.value | json }} 
+<!-- Value: {{ supervisorForm.value | json }} 
     [campos supervisor]   nome:, cpf:, email:, profissao:  -->
 
 <form class="std-form" #f="ngForm" (ngSubmit)="salvar(f)">
@@ -11,8 +11,7 @@
 
     <mat-form-field>
         <mat-label>CPF</mat-label>
-        <input name="cpf" matInput [(ngModel)]="supervisor.cpf" required placeholder="CPF, apenas os números"
-            mask="000.000.000-00">
+        <input name="cpf" matInput [(ngModel)]="supervisor.cpf" required placeholder="CPF, apenas os números" mask="000.000.000-00">
     </mat-form-field>
 
     <mat-form-field>
@@ -22,8 +21,11 @@
     </mat-form-field>
 
     <mat-form-field>
-        <mat-label>Profissão</mat-label>
-        <input name="profissao" matInput [(ngModel)]="supervisor.profissao" placeholder="Advogado ou Assistente Social">
+        <mat-select name="profissao" required placeholder="Profissão do Supervisor" [(ngModel)]="supervisor.profissao">
+            <mat-option *ngFor="let profs of profissoes" [value]="profs.codigo">
+                {{profs.nome}}
+            </mat-option>
+        </mat-select>
     </mat-form-field>
 
     <mat-toolbar class="form-buttons">

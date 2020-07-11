@@ -17,6 +17,17 @@ export class EstagiarioFormComponent implements OnInit {
 
   estagiario: any = {} // objeto vazio
 
+  cursos : any = [
+    {
+      codigo: 'DI',
+      nome: 'Direito'
+    },
+    {
+      codigo: 'SS',
+      nome: 'Serviço Social'
+    }
+  ]
+
   constructor(
     private snackBar: MatSnackBar,
     private estagiarioSrv: EstagiarioService,

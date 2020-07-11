@@ -236,6 +236,20 @@ front-end> ng g c ui/confirm-dlg
 ## aula 24
 min 45 objetos e relacoes 
 
+## aula 25 format mask datas 
+   no front
+   yarn add @angular/material-moment-adapter moment
+fuen, deu errado :(  fiz rollback, mas o erro era
+    yarn check v1.22.4[
+    info fsevents@2.1.3: The platform "linux" is incompatible with this module.
+    info "fsevents@2.1.3" is an optional dependency and failed compatibility check. Excluding it from installation.
+    info fsevents@1.2.13: The platform "linux" is incompatible with this module.
+    info "fsevents@1.2.13" is an optional dependency and failed compatibility check. Excluding it from installation.
+    error "@angular/material-moment-adapter#@angular/material@10.0.1" doesn't satisfy found match of "@angular/material@9.2.4"
+    error "@angular/material-moment-adapter#@angular/core@^10.0.0 || ^11.0.0-0" doesn't satisfy found match of "@angular/core@9.1.12"
+    error Found 2 errors.]
+
+
 
 trocando a paleta de cores pra id visual da unesp #0093DD
 http://www.carbonrider.com/2019/01/30/material-theme-with-angular-7-change-primary-and-accent-color/

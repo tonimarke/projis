@@ -1,3 +1,7 @@
+import { EstagiarioService } from './../../estagiario/estagiario.service';
+import { SupervisorService } from './../../supervisor/supervisor.service';
+import { PcontrariaService } from './../../pcontraria/pcontraria.service';
+import { UsuarioService } from './../../usuario/usuario.service';
 import { AcaoService } from './../acao.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Component, OnInit } from '@angular/core';
@@ -17,12 +21,23 @@ export class AcaoFormComponent implements OnInit {
 
   acao: any = {} // objeto vazio
 
+  //entidades relacionadas
+  usuarios : any = [] //vetor vazio
+  pcontrarias : any = [] //vetor vazio
+  supervisores : any = [] //vetor vazio
+  estagiarios : any = [] //vetor vazio
+  
+
   constructor(
     private snackBar: MatSnackBar,
     private acaoSrv: AcaoService,
     private router: Router,
     private actRoute: ActivatedRoute,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private usuarioSrv: UsuarioService,
+    private pcontrariaSrv: PcontrariaService,
+    private supervisorSrv: SupervisorService,
+    private estagiarioSrv: EstagiarioService
   ) { }
 
   async ngOnInit() {
@@ -38,6 +53,16 @@ export class AcaoFormComponent implements OnInit {
       catch (erro) {
         this.snackBar.open(erro.message, 'Que pena!', { duration: 5000 })
       }
+    }
+
+    // Preenchendo entidades relacionadas
+    try {
+      this.usuarios = await this.usuarioSrv.listar(),
+      this.pcontrarias = await this.pcontrariaSrv.listar(),
+      this.supervisores = await this.supervisorSrv.listar(),
+      this.estagiarios = await this.estagiarioSrv.listar()
+    } catch (erro) {
+      this.snackBar.open(erro.message, 'Que pena!', { duration: 5000 })
     }
     // plotando o conteudo volátil
     // this.acoes = await this.servidorSrv.listar()

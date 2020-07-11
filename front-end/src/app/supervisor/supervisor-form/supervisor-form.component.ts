@@ -14,6 +14,17 @@ import { ConfirmDlgComponent } from 'src/app/ui/confirm-dlg/confirm-dlg.componen
 export class SupervisorFormComponent implements OnInit {
 
   titulo: string = 'Novo Supervisor'
+  
+  profissoes : any = [
+    {
+      codigo: 'ADV',
+      nome: 'Advogado(a)'
+    },
+    {
+      codigo: 'ASS',
+      nome: 'Assistente Social'
+    }
+  ]
 
   supervisor: any = {} // objeto vazio
 
