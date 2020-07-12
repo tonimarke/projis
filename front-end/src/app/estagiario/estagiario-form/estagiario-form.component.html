@@ -24,7 +24,7 @@
 
     <mat-form-field>
         <mat-label>RG</mat-label>
-        <input name="cpf" matInput [(ngModel)]="estagiario.rg" placeholder="RG">
+        <input name="rg" matInput [(ngModel)]="estagiario.rg" placeholder="RG">
     </mat-form-field>
 
     <mat-form-field>
@@ -77,13 +77,33 @@
         </mat-select>
     </mat-form-field>
 
-    
-    <!-- caçar onde trocar isso por um checkbox / button, selector whatever
+    <section class="situacao_bol">
+        <mat-radio-group [(ngModel)]="estagiario.status">
+            <mat-radio-button [value]="true">Ativo</mat-radio-button>
+            <mat-radio-button [value]="false">Inativo</mat-radio-button>
+        </mat-radio-group>    
+    </section>        
+            
+<!-- refs do button
+    caçar onde trocar isso por um checkbox / button, selector whatever
     o campo já é boolean, pensando em vencer o vinculo trocar automatico -->
-    <mat-form-field>
+    <!-- <mat-form-field>
         <mat-label>Situação</mat-label>
         <input name="situacao" matInput [(ngModel)]="estagiario.status" placeholder="Situação atual">
-    </mat-form-field>
+    </mat-form-field> 
+            <mat-radio-button class=" example-margin" value="true">Ativo</mat-radio-button>
+            <mat-radio-button class="example-margin" value="false">Inativo</mat-radio-button>
+        <section class="situacao_radio">
+        <mat-radio-group class="radio-group" [(ngModel)]="estagiario.status">
+
+            <input type="radio" name="situacao" [(ngModel)]="estagiario.status" [value]="true">
+            <input type="radio" name="situacao" [(ngModel)]="estagiario.status" [value]="false">
+
+            <mat-radio-button class="radio-button" *ngFor="let season of seasons" [value]="season">
+                {{season}}
+            </mat-radio-button>  
+        </mat-radio-group>
+    </section> -->
 
     <mat-toolbar class="form-buttons">
         <mat-toolbar-row>

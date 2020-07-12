@@ -27,16 +27,24 @@
     <td mat-cell *matCellDef="let estagiario"> {{estagiario.cpf}} </td>
   </ng-container>
 
-  <ng-container matColumnDef="enderecos">
-    <th mat-header-cell *matHeaderCellDef> Telefones </th>
-    <td mat-cell *matCellDef="let estagiario"> {{estagiario.enderecos}} </td>
+  <ng-container matColumnDef="rg">
+    <th mat-header-cell *matHeaderCellDef> RG </th>
+    <td mat-cell *matCellDef="let estagiario"> {{estagiario.rg}} </td>
   </ng-container>
 
+  <ng-container matColumnDef="enderecos">
+    <th mat-header-cell *matHeaderCellDef> Endereços </th>
+    <td mat-cell *matCellDef="let estagiario"> {{estagiario.enderecos[0]?.logradouro}} </td>
+  </ng-container>
+
+  <!-- testar com o formgroup ou girar um ngfor pra coletar os valores 
+   por enquanto ta a miugué de pegar a primeira do vetor-->
   <ng-container matColumnDef="telefones">
     <th mat-header-cell *matHeaderCellDef> Telefones </th>
-    <td mat-cell *matCellDef="let estagiario"> {{estagiario.telefones}} </td>
+    <td mat-cell *matCellDef="let estagiario"> {{estagiario.telefones[0]?.numero}} </td>
   </ng-container>
 
+  <!-- gravar o date.now no backend, sugerir no front precisa testar -->
   <ng-container matColumnDef="inicio_vinculo">
     <th mat-header-cell *matHeaderCellDef> Início Vínculo </th>
     <td mat-cell *matCellDef="let estagiario"> {{estagiario.inicio_vinculo | date:'dd/MM/yyyy'}} </td>

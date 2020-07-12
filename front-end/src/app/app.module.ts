@@ -21,6 +21,7 @@ import { AcaoFormComponent } from "./acao/acao-form/acao-form.component";
 import { PcontrariaFormComponent } from "./pcontraria/pcontraria-form/pcontraria-form.component";
 import { SupervisorFormComponent } from "./supervisor/supervisor-form/supervisor-form.component";
 import { UsuarioFormComponent } from "./usuario/usuario-form/usuario-form.component";
+import { MatRadioModule } from "@angular/material/radio";
 
 // // Habilitar formatação de moeda e data em português
 // import { registerLocaleData } from "@angular/common";
@@ -68,9 +69,10 @@ import { UsuarioFormComponent } from "./usuario/usuario-form/usuario-form.compon
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    NgxMaskModule.forRoot()
-    // MaterialModule,
-    // MatMomentDateModule
+    NgxMaskModule.forRoot(),
+    MaterialModule,
+    // MatMomentDateModule,
+    MatRadioModule
   ],
   providers: [
     /**** Datas em português no MatDatepicker  ****/

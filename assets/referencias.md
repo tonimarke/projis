@@ -1,6 +1,8 @@
 # nested pros enderecos e telefones
 https://stackblitz.com/edit/angular-nested-mat-table?file=app%2Ftable-expandable-rows-example.ts
 
+# datepicker e DOB exemplos
+http://www.marcorpsa.com/ee/
 
 ## parsers e webdrivers pra capturar os pdfs em outro site
 https://www.selenium.dev/documentation/en/webdriver/
@@ -249,7 +251,8 @@ fuen, deu errado :(  fiz rollback, mas o erro era
     error "@angular/material-moment-adapter#@angular/core@^10.0.0 || ^11.0.0-0" doesn't satisfy found match of "@angular/core@9.1.12"
     error Found 2 errors.]
 
-
+## aula 26
+   implementar uma busca, 1h pra frente
 
 trocando a paleta de cores pra id visual da unesp #0093DD
 http://www.carbonrider.com/2019/01/30/material-theme-with-angular-7-change-primary-and-accent-color/

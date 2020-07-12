@@ -14,7 +14,8 @@ export class AcaoListComponent implements OnInit {
 
   acoes : any = [] // vetor vazio
   // display com todas as colunas para referencia
-  // ['nomeAcao', 'tipoacao', 'usuario', 'pcontraria', 'data_atendimento', 'supervisor', 'estagiario', 'providencias']
+  // ['num_acao','nomeAcao', 'tipoacao', 'usuario', 'pcontraria', 'data_atendimento', 
+  // 'supervisor', 'estagiario', 'providencias']
   displayedColumns: any = ['num_acao','nomeAcao', 'tipoacao', 'usuario', 'pcontraria', 'data_atendimento', 'supervisor', 'estagiario','providencias', 'editar', 'excluir']
   
   constructor(
