@@ -51,7 +51,7 @@
                 </tr>
                 <tr>
                     <mat-label for="enderecos">Endereços</mat-label>
-                    <table #innerTables mat-table #innerSort="matSort" [dataSource]="estagiario.enderecos" matSort>
+                    <table #innerTables mat-table #innerSort="matSort" [dataSource]="estagiario.enderecos?.itens" matSort>
                         <ng-container matColumnDef="{{innerColumn}}" *ngFor="let innerColumn of innerDisplayEnderecos">
                             <th mat-header-cell *matHeaderCellDef mat-sort-header> {{innerColumn}} </th>
                             <td mat-cell *matCellDef="let element"> {{element[innerColumn]}} </td>

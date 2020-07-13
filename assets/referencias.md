@@ -1,6 +1,12 @@
 # nested pros enderecos e telefones
 https://stackblitz.com/edit/angular-nested-mat-table?file=app%2Ftable-expandable-rows-example.ts
 
+# referencias nesteds frameworks
+https://koajs.com/
+https://feathersjs.com/
+https://nestjs.com/
+
+
 # datepicker e DOB exemplos
 http://www.marcorpsa.com/ee/
 
@@ -250,6 +256,9 @@ fuen, deu errado :(  fiz rollback, mas o erro era
     error "@angular/material-moment-adapter#@angular/material@10.0.1" doesn't satisfy found match of "@angular/material@9.2.4"
     error "@angular/material-moment-adapter#@angular/core@^10.0.0 || ^11.0.0-0" doesn't satisfy found match of "@angular/core@9.1.12"
     error Found 2 errors.]
+
+    tentei fazendoupdate do projeto
+    ng update @angular/core @angular/cli , nao rolou 
 
 ## aula 26
    implementar uma busca, 1h pra frente
