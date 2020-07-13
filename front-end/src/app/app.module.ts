@@ -15,13 +15,16 @@ import { PcontrariaListComponent } from "./pcontraria/pcontraria-list/pcontraria
 import { SupervisorListComponent } from "./supervisor/supervisor-list/supervisor-list.component";
 import { ConfirmDlgComponent } from "./ui/confirm-dlg/confirm-dlg.component";
 import { EstagiarioFormComponent } from "./estagiario/estagiario-form/estagiario-form.component";
-import { FormsModule } from "@angular/forms";
+import { EstagiarioNestedComponent } from './estagiario/estagiario-nested/estagiario-nested.component';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { NgxMaskModule } from "ngx-mask";
 import { AcaoFormComponent } from "./acao/acao-form/acao-form.component";
 import { PcontrariaFormComponent } from "./pcontraria/pcontraria-form/pcontraria-form.component";
 import { SupervisorFormComponent } from "./supervisor/supervisor-form/supervisor-form.component";
 import { UsuarioFormComponent } from "./usuario/usuario-form/usuario-form.component";
 import { MatRadioModule } from "@angular/material/radio";
+import { EstagiarioPadraoComponent } from './estagiario/estagiario-padrao/estagiario-padrao.component';
+
 
 // // Habilitar formatação de moeda e data em português
 // import { registerLocaleData } from "@angular/common";
@@ -61,6 +64,8 @@ import { MatRadioModule } from "@angular/material/radio";
     PcontrariaFormComponent,
     SupervisorFormComponent,
     UsuarioFormComponent,
+    EstagiarioNestedComponent,
+    EstagiarioPadraoComponent
   ],
   imports: [
     BrowserModule,
@@ -71,8 +76,10 @@ import { MatRadioModule } from "@angular/material/radio";
     FormsModule,
     NgxMaskModule.forRoot(),
     MaterialModule,
-    // MatMomentDateModule,
-    MatRadioModule
+    //MatMomentDateModule,
+    //MatNativeDateModule,
+    MatRadioModule,
+    ReactiveFormsModule
   ],
   providers: [
     /**** Datas em português no MatDatepicker  ****/

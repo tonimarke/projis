@@ -227,7 +227,7 @@ front-end> ng g c ui/confirm-dlg
 
    instala o pacote pra mascaras de input fields (front-end)
    yarn add ngx-mask
-
+ithi
 ## aula 23 -- 
    estudar observable / promise
    43. resumao de criações:

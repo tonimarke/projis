@@ -10,6 +10,7 @@ import { SupervisorListComponent } from "./supervisor/supervisor-list/supervisor
 import { NgModule, Component } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { AcaoFormComponent } from "./acao/acao-form/acao-form.component";
+import { EstagiarioNestedComponent } from './estagiario/estagiario-nested/estagiario-nested.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: "estagiario", // listagem
     component: EstagiarioListComponent,
+  },
+  {
+    path: "estagnested", // listagem
+    component: EstagiarioNestedComponent,
   },
   {
     path: "estagiario/novo", // cadastra um novo stag
