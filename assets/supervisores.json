@@ -4,7 +4,7 @@
         "nome": "Eliana Siqueira",
         "cpf": "854.486.854-77",
         "rg": "215-485-77",
-        "profissao": "Advogado",
+        "profissao": "ADV",
         "__v": 0
     },
     {
@@ -12,7 +12,7 @@
         "nome": "Silvia Bernadete",
         "cpf": "124.486.454-77",
         "rg": "8425-125-76",
-        "profissao": "Advogado",
+        "profissao": "ADV",
         "__v": 0
     },
     {
@@ -20,7 +20,7 @@
         "nome": "Luciana Soarez",
         "cpf": "174.486.854-71",
         "rg": "725-125-72",
-        "profissao": "Assistente Social",
+        "profissao": "ASS",
         "__v": 0
     }
 ]
