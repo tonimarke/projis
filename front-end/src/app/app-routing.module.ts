@@ -1,3 +1,4 @@
+import { HomeComponent } from './views/home/home.component';
 import { UsuarioFormComponent } from "./usuario/usuario-form/usuario-form.component";
 import { PcontrariaFormComponent } from "./pcontraria/pcontraria-form/pcontraria-form.component";
 import { SupervisorFormComponent } from "./supervisor/supervisor-form/supervisor-form.component";
@@ -12,7 +13,15 @@ import { Routes, RouterModule } from "@angular/router";
 import { AcaoFormComponent } from "./acao/acao-form/acao-form.component";
 import { EstagiarioNestedComponent } from './estagiario/estagiario-nested/estagiario-nested.component';
 
+
 const routes: Routes = [
+
+
+  {
+    path: "",
+    component: HomeComponent
+  },
+
   {
     path: "acao", // rotas dos ativos do projeto, começa sem a /
     component: AcaoListComponent,

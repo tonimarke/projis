@@ -1,0 +1,16 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list class="nav-list">
+            <a mat-menu-item [routerLink]="['/']"> <i class="material-icons"> home </i> Início </a>
+            <a mat-menu-item [routerLink]="['/acao']"> <i class="material-icons"> gavel </i> Ações</a>
+            <a mat-menu-item [routerLink]="['/estagiario']"> <i class="material-icons"> person </i> Estagiários </a>
+            <!-- <a mat-menu-item [routerLink]="['/estagnested']">stag_nest</a> -->
+            <a mat-menu-item [routerLink]="['/supervisor']"> <i class="material-icons"> supervisor_account </i> Supervisores </a>
+            <a mat-menu-item [routerLink]="['/usuario']"> <i class="material-icons"> groups </i> Usuários </a>
+            <a mat-menu-item [routerLink]="['/pcontraria']"> <i class="material-icons"> person_outline </i> Partes Contrárias </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

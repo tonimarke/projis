@@ -1,3 +1,4 @@
+import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
@@ -24,6 +25,11 @@ import { SupervisorFormComponent } from "./supervisor/supervisor-form/supervisor
 import { UsuarioFormComponent } from "./usuario/usuario-form/usuario-form.component";
 import { MatRadioModule } from "@angular/material/radio";
 import { EstagiarioPadraoComponent } from './estagiario/estagiario-padrao/estagiario-padrao.component';
+import { NavComponent } from './ui/nav/nav.component';
+import { HomeComponent } from './views/home/home.component';
+
+
+
 
 
 // // Habilitar formatação de moeda e data em português
@@ -65,7 +71,9 @@ import { EstagiarioPadraoComponent } from './estagiario/estagiario-padrao/estagi
     SupervisorFormComponent,
     UsuarioFormComponent,
     EstagiarioNestedComponent,
-    EstagiarioPadraoComponent
+    EstagiarioPadraoComponent,
+    NavComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -79,7 +87,8 @@ import { EstagiarioPadraoComponent } from './estagiario/estagiario-padrao/estagi
     //MatMomentDateModule,
     //MatNativeDateModule,
     MatRadioModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatCardModule
   ],
   providers: [
     /**** Datas em português no MatDatepicker  ****/
