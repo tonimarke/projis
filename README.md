@@ -1,4 +1,16 @@
-ProJis é um protótpio do sistema do CJS da FCHS
+# ProJis é um protótpio do sistema do CJS da FCHS
+
+## Funcionalidades
+### Cadastro de: 
+- Usuários/clientes
+- Partes contrárias
+- Ações/processos
+- Estagiários (nivel mais baixo de acesso)
+- Supervisores
+- Administradores
+
+
+
 
 todo tod todoo
 lorem ipsum [descricao](#comecando),
