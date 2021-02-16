@@ -28,7 +28,7 @@ docker start mongo
 Na raiz do projeto, abra dois terminais, como no exemplo abaixo no VS Code:
 ![Abrindo dois terminais no VS code](https://i.imgur.com/No8LER8.gif)
 Em um dos terminais, execute os seguintes códigos:
-```console
+```shell
 cd back-end/ && yarn install
 yarn start
 ```
