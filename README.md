@@ -1,4 +1,6 @@
 # ProJis é um protótpio do sistema do CJS da FCHS
+![preview do sistema juridico e social](https://i.imgur.com/1wg9Ken.gif)
+
 Este projeto foi criado utilizando MEAN Stack (Mongo Express Angular e Node) para treino das tecnologias durante as aulas de Análise e Desenvolvimento de Sistemas e descontinuado. O projeto oficial se encontra no repositório [Projis2.0](https://github.com/tonimarke/projis2.0 "Software em produção")
 
 ## Funcionalidades desse protótipo
