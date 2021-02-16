@@ -14,23 +14,23 @@ Para que se cadastre uma **ação**, é necessário que se tenha cadastrado um s
 ## Rodando o projeto
 ### Clonando o repositório:
 ```shell
-$ git clone https://github.com/tonimarke/projis
+git clone https://github.com/tonimarke/projis
 ```
 ### Preparando banco de dados 
 Para rodar sem alterar o código, é necessário criar um banco de dados MongoDB com nome projisDB na porta 27017
 **Como Criar e rodar o Banco de dados no docker**
 ```shell
-$ docker run --projisDB mongo -p 27017:27017 -d -t mongo
-$ docker start mongo
+docker run --projisDB mongo -p 27017:27017 -d -t mongo
+docker start mongo
 ```
 
 ### Instalando dependências:
 Na raiz do projeto, abra dois terminais, como no exemplo abaixo no VS Code:
 ![Abrindo dois terminais no VS code](https://i.imgur.com/No8LER8.gif)
 Em um dos terminais, execute os seguintes códigos:
-```shell
-$ cd back-end/ && yarn install
-$ yarn start
+```console
+cd back-end/ && yarn install
+yarn start
 ```
 No outro terminal, insira:
 ```shell
